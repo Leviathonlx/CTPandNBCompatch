@@ -1,4106 +1,5322 @@
-##########################################
-##	 Community Title Project Mod		##
-##	   Knight Customisation 			##
-##########################################
-
-KnightCulture = {
+CountMaleCath = {
 	type = character
-	
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
 		}
-		localization_key = knight_irish_gaelic
-	}
-#####################################
-## West Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_english
+		localization_key = kurfurst_count_male_cath
 	}
 	text = {
 		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_breton
-	}
-	text = {
-		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
 			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
 			}
 		}
-		localization_key = knight_cumbrian_pictish
+		localization_key = count_male_theo_cath_independent
 	}
 	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_saxon
-	}
-	text = {
-		trigger = {
-			has_culture_group = culture_group:central_germanic_group
-			NOR = {
-				has_culture = culture:saxon
-				has_culture = culture:dutch
-				has_culture = culture:vlaemsch
-				has_culture = culture:limburgisch
-			}
-		}
-		localization_key = knight_old_high_german ##Franconians, Swabians and Bavarians all spoke Old High German (c) Urkaun
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_frisian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:dutch
-				has_culture = culture:vlaemsch
-				has_culture = culture:limburgisch
-			}
-		}
-		localization_key = knight_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_assyrian
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_sicilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lombard
-		}
-		localization_key = knight_lombard
-	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian ##For consistency
-			}
-		}
-		localization_key = knight_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_beja
-	}
-	
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_chuvash
-	}
-	
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_malinke
-	}
-	
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_default
 		fallback = yes
+		localization_key = count_default_male_cath
 	}
 }
-
-KnightCultureNoTooltip = {
+CountFemaleCath = {
 	type = character
-	
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
 		}
-		localization_key = knight_no_tooltip_irish_gaelic
-	}
-#####################################
-## West Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_no_tooltip_english
+		localization_key = kurfurst_count_female_cath
 	}
 	text = {
 		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_no_tooltip_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_no_tooltip_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_no_tooltip_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_no_tooltip_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_no_tooltip_breton
-	}
-	text = {
-		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
 			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
 			}
 		}
-		localization_key = knight_no_tooltip_cumbrian_pictish
+		localization_key = count_female_theo_cath_independent
 	}
 	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_no_tooltip_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_no_tooltip_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_no_tooltip_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_no_tooltip_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_no_tooltip_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_no_tooltip_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_no_tooltip_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_no_tooltip_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_no_tooltip_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_no_tooltip_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_no_tooltip_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_no_tooltip_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_no_tooltip_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_no_tooltip_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_no_tooltip_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_no_tooltip_saxon
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:franconian
-				has_culture = culture:swabian
-				has_culture = culture:bavarian
-			}
-		}
-		localization_key = knight_no_tooltip_old_high_german
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_no_tooltip_frisian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:dutch
-		}
-		localization_key = knight_no_tooltip_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_no_tooltip_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_no_tooltip_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_no_tooltip_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_no_tooltip_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_no_tooltip_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_no_tooltip_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_no_tooltip_assyrian
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_no_tooltip_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_no_tooltip_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_no_tooltip_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_no_tooltip_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_no_tooltip_sicilian
-	}
-#	text = {
-#		trigger = {
-#			has_culture = culture:lombard
-#		}
-#		localization_key = knight_no_tooltip_lombard
-#	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian ##For consistency
-			}
-		}
-		localization_key = knight_no_tooltip_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_no_tooltip_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_no_tooltip_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_no_tooltip_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_no_tooltip_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_no_tooltip_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_no_tooltip_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_no_tooltip_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_no_tooltip_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_no_tooltip_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_no_tooltip_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_no_tooltip_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_no_tooltip_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_no_tooltip_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_no_tooltip_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_no_tooltip_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_no_tooltip_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_no_tooltip_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_no_tooltip_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_no_tooltip_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_no_tooltip_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_no_tooltip_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_no_tooltip_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_no_tooltip_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_no_tooltip_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_no_tooltip_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_no_tooltip_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_no_tooltip_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_no_tooltip_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_no_tooltip_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_no_tooltip_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_no_tooltip_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_no_tooltip_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_no_tooltip_beja
-	}
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_no_tooltip_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_no_tooltip_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_no_tooltip_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_no_tooltip_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_no_tooltip_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_no_tooltip_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_no_tooltip_chuvash
-	}
-	
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_no_tooltip_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_no_tooltip_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_no_tooltip_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_no_tooltip_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_no_tooltip_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_no_tooltip_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_no_tooltip_malinke
-	}
-	
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_no_tooltip_default
 		fallback = yes
+		localization_key = count_default_female_cath
 	}
 }
-
-KnightCultureNoTooltipLowercase = {
+CountyCath = {
 	type = character
-	
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
 		}
-		localization_key = knight_lower_irish_gaelic
-	}
-#####################################
-## West Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_lower_english
+		localization_key = kurfurstdom_county_cath
 	}
 	text = {
 		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_lower_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_lower_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_lower_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_lower_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_lower_breton
-	}
-	text = {
-		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
 			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
 			}
 		}
-		localization_key = knight_lower_cumbrian_pictish
+		localization_key = independent_county_cath
 	}
 	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_lower_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_lower_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_lower_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_lower_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_lower_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_lower_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_lower_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_lower_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_lower_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_lower_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_lower_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_lower_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_lower_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_lower_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_lower_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_lower_saxon
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:franconian
-				has_culture = culture:swabian
-				has_culture = culture:bavarian
-			}
-		}
-		localization_key = knight_lower_old_high_german
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_lower_frisian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:dutch
-		}
-		localization_key = knight_lower_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_lower_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_lower_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_lower_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_lower_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_lower_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_lower_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_lower_assyrian
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_lower_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_lower_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_lower_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_lower_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_lower_sicilian
-	}
-#	text = {
-#		trigger = {
-#			has_culture = culture:lombard
-#		}
-#		localization_key = knight_lower_lombard
-#	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian ##For consistency
-			}
-		}
-		localization_key = knight_lower_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_lower_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_lower_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_lower_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_lower_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_lower_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_lower_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_lower_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_lower_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_lower_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_lower_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_lower_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_lower_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_lower_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_lower_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_lower_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_lower_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_lower_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_lower_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_lower_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_lower_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_lower_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_lower_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_lower_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_lower_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_lower_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_lower_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_lower_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_lower_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_lower_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_lower_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_lower_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_lower_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_lower_beja
-	}
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_lower_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_lower_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_lower_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_lower_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_lower_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_lower_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_lower_chuvash
-	}
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_lower_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_lower_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_lower_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_lower_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_lower_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_lower_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_lower_malinke
-	}
-	
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_lower_default
 		fallback = yes
+		localization_key = county_default_cath
 	}
 }
-
-KnightCulturePlural = {
+IndepCountyCath = {
 	type = character
-
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			highest_held_title_tier >= tier_duchy
 		}
-		localization_key = knight_plural_irish_gaelic
+		localization_key = county_default_cath
 	}
-#####################################
-## West Germanic group
-#####################################
 	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_plural_english
-	}
-	text = {
-		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_plural_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_plural_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_plural_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_plural_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_plural_breton
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
-			}
-		}
-		localization_key = knight_plural_cumbrian_pictish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_plural_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_plural_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_plural_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_plural_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_plural_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_plural_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_plural_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_plural_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_plural_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_plural_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_plural_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_plural_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_plural_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_plural_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_plural_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_plural_saxon
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:franconian
-				has_culture = culture:swabian
-				has_culture = culture:bavarian
-			}
-		}
-		localization_key = knight_plural_old_high_german
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_plural_frisian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:dutch
-		}
-		localization_key = knight_plural_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_plural_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_plural_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_plural_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_plural_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_plural_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_plural_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_plural_assyrian
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_plural_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_plural_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_plural_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_plural_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_plural_sicilian
-	}
-#	text = {
-#		trigger = {
-#			has_culture = culture:lombard
-#		}
-#		localization_key = knight_plural_lombard
-#	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian
-			}
-		}
-		localization_key = knight_plural_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_plural_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_plural_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_plural_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_plural_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_plural_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_plural_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_plural_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_plural_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_plural_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_plural_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_plural_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_plural_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_plural_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_plural_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_plural_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_plural_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_plural_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_plural_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_plural_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_plural_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_plural_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_plural_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_plural_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_plural_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_plural_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_plural_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_plural_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_plural_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_plural_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_plural_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_plural_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_plural_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_plural_beja
-	}
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_plural_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_plural_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_plural_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_plural_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_plural_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_plural_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_plural_chuvash
-	}
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_plural_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_plural_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_plural_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_plural_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_plural_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_plural_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_plural_malinke
-	}
-	
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_plural_default
 		fallback = yes
+		localization_key = independent_county_cath
 	}
 }
-
-KnightCulturePluralNoTooltip = {
+DukeMaleCath = {
 	type = character
-
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
 		}
-		localization_key = knight_plural_no_tooltip_irish_gaelic
-	}
-#####################################
-## West Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_plural_no_tooltip_english
+		localization_key = kurfurst_duke_male_cath
 	}
 	text = {
 		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_plural_no_tooltip_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_plural_no_tooltip_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_plural_no_tooltip_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_plural_no_tooltip_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_plural_no_tooltip_breton
-	}
-	text = {
-		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
 			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
 			}
 		}
-		localization_key = knight_plural_no_tooltip_cumbrian_pictish
+		localization_key = duke_male_theo_cath_independent
 	}
 	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_plural_no_tooltip_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_plural_no_tooltip_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_plural_no_tooltip_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_plural_no_tooltip_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_plural_no_tooltip_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_plural_no_tooltip_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_plural_no_tooltip_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_plural_no_tooltip_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_plural_no_tooltip_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_plural_no_tooltip_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_plural_no_tooltip_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_plural_no_tooltip_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_plural_no_tooltip_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_plural_no_tooltip_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_plural_no_tooltip_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_plural_no_tooltip_saxon
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:franconian
-				has_culture = culture:swabian
-				has_culture = culture:bavarian
-			}
-		}
-		localization_key = knight_plural_no_tooltip_old_high_german
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_plural_no_tooltip_frisian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:dutch
-		}
-		localization_key = knight_plural_no_tooltip_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_plural_no_tooltip_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_plural_no_tooltip_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_plural_no_tooltip_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_plural_no_tooltip_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_plural_no_tooltip_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_plural_no_tooltip_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_plural_no_tooltip_assyrian
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_plural_no_tooltip_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_plural_no_tooltip_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_plural_no_tooltip_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_plural_no_tooltip_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_plural_no_tooltip_sicilian
-	}
-#	text = {
-#		trigger = {
-#			has_culture = culture:lombard
-#		}
-#		localization_key = knight_plural_no_tooltip_lombard
-#	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian
-			}
-		}
-		localization_key = knight_plural_no_tooltip_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_plural_no_tooltip_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_plural_no_tooltip_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_plural_no_tooltip_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_plural_no_tooltip_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_plural_no_tooltip_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_plural_no_tooltip_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_plural_no_tooltip_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_plural_no_tooltip_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_plural_no_tooltip_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_plural_no_tooltip_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_plural_no_tooltip_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_plural_no_tooltip_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_plural_no_tooltip_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_plural_no_tooltip_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_plural_no_tooltip_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_plural_no_tooltip_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_plural_no_tooltip_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_plural_no_tooltip_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_plural_no_tooltip_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_plural_no_tooltip_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_plural_no_tooltip_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_plural_no_tooltip_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_plural_no_tooltip_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_plural_no_tooltip_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_plural_no_tooltip_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_plural_no_tooltip_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_plural_no_tooltip_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_plural_no_tooltip_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_plural_no_tooltip_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_plural_no_tooltip_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_plural_no_tooltip_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_plural_no_tooltip_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_plural_no_tooltip_beja
-	}
-	
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_plural_no_tooltip_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_plural_no_tooltip_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_plural_no_tooltip_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_plural_no_tooltip_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_plural_no_tooltip_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_plural_no_tooltip_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_plural_no_tooltip_chuvash
-	}
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_plural_no_tooltip_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_plural_no_tooltip_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_plural_no_tooltip_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_plural_no_tooltip_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_plural_no_tooltip_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_plural_no_tooltip_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_plural_no_tooltip_malinke
-	}
-	
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_plural_no_tooltip_default
 		fallback = yes
+		localization_key = duke_default_male_cath
 	}
 }
-
-KnightCulturePluralNoTooltipLowercase = {
+DukeFemaleCath = {
 	type = character
-
-#####################################
-## Goidelic group
-#####################################
 	text = {
 		trigger = {
-			has_culture_group = culture_group:goidelic_group
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
 		}
-		localization_key = knight_plural_lower_irish_gaelic
-	}
-#####################################
-## West Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:english
-		}
-		localization_key = knight_plural_lower_english
+		localization_key = kurfurst_duke_female_cath
 	}
 	text = {
 		trigger = {
-			has_culture = culture:anglo_saxon
-		}
-		localization_key = knight_plural_lower_anglo_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:old_saxon
-		}
-		localization_key = knight_plural_lower_old_saxon
-	}
-	text = {
-		trigger = {
-			has_culture = culture:scottish
-		}
-		localization_key = knight_plural_lower_scottish
-	}
-#####################################
-## Brythonic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:welsh
-		}
-		localization_key = knight_plural_lower_welsh
-	}
-	text = {
-		trigger = {
-			has_culture = culture:breton
-		}
-		localization_key = knight_plural_lower_breton
-	}
-	text = {
-		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
 			OR = {
-				has_culture = culture:cumbrian
-				has_culture = culture:pictish	
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
 			}
 		}
-		localization_key = knight_plural_lower_cumbrian_pictish
+		localization_key = duke_female_theo_cath_independent
 	}
 	text = {
-		trigger = {
-			has_culture = culture:cornish
-		}
-		localization_key = knight_plural_lower_cornish
-	}
-#####################################
-## Frankish group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:frankish
-		}
-		localization_key = knight_plural_lower_frankish
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:french
-				has_culture = culture:norman
-			}
-		}
-		localization_key = knight_plural_lower_french_norman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:occitan
-		}
-		localization_key = knight_plural_lower_occitan
-	}
-#####################################
-## Iberian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:basque
-		}
-		localization_key = knight_plural_lower_basque
-	}
-	text = {
-		trigger = {
-			has_culture = culture:castilian
-		}
-		localization_key = knight_plural_lower_castilian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:catalan
-		}
-		localization_key = knight_plural_lower_catalan
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:portuguese
-				has_culture = culture:galician
-			}
-		}
-		localization_key = knight_plural_lower_portuguese_galician
-	}
-	text = {
-		trigger = {
-			has_culture = culture:visigothic
-		}
-		localization_key = knight_plural_lower_visigothic
-	}
-	text = {
-		trigger = {
-			has_culture = culture:asturleonese
-		}
-		localization_key = knight_plural_lower_asturleonese
-	}
-	text = {
-		trigger = {
-			has_culture = culture:aragonese
-		}
-		localization_key = knight_plural_lower_aragonese
-	}
-#####################################
-## North Germanic group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
-		}
-		localization_key = knight_plural_lower_norse_norwegian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:swedish
-				has_culture = culture:danish
-			}
-		}
-		localization_key = knight_plural_lower_swedish_danish
-	}
-#####################################
-## Balto-Finnic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:finnish
-		}
-		localization_key = knight_plural_lower_finnish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:estonian
-		}
-		localization_key = knight_plural_lower_estonian
-	}
-#####################################
-## Central Germanic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:saxon
-		}
-		localization_key = knight_plural_lower_saxon
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:franconian
-				has_culture = culture:swabian
-				has_culture = culture:bavarian
-			}
-		}
-		localization_key = knight_plural_lower_old_high_german
-	}
-	text = {
-		trigger = {
-			has_culture = culture:frisian
-		}
-		localization_key = knight_plural_lower_frisian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:dutch
-		}
-		localization_key = knight_plural_lower_dutch
-	}
-#####################################
-## Berber group - to be added here
-#####################################
-#####################################
-## Arabic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:arabic_group
-			NAND = {
-				has_culture = culture:egyptian
-				has_faith = faith:coptic
-			}
-		}
-		localization_key = knight_plural_lower_arabic_group
-	}
-	text = {
-		trigger = {
-			has_culture = culture:egyptian
-			has_faith = faith:coptic
-		}
-		localization_key = knight_plural_lower_egyptian_coptic
-	}
-#####################################
-## Byzantine group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:armenian
-		}
-		localization_key = knight_plural_lower_armenian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:greek
-		}
-		localization_key = knight_plural_lower_greek
-	}
-	text = {
-		trigger = {
-			has_culture = culture:georgian
-		}
-		localization_key = knight_plural_lower_georgian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:alan
-		}
-		localization_key = knight_plural_lower_alan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:assyrian
-		}
-		localization_key = knight_plural_lower_alan
-	}
-#####################################
-## Latin group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:italian
-		}
-		localization_key = knight_plural_lower_italian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:roman
-		}
-		localization_key = knight_plural_lower_roman
-	}
-	text = {
-		trigger = {
-			has_culture = culture:cisalpine
-		}
-		localization_key = knight_plural_lower_cisalpine
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sardinian
-		}
-		localization_key = knight_plural_lower_sardinian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sicilian
-		}
-		localization_key = knight_plural_lower_sicilian
-	}
-#	text = {
-#		trigger = {
-#			has_culture = culture:lombard
-#		}
-#		localization_key = knight_plural_lower_lombard
-#	}
-#####################################
-## South Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:south_slavic_group
-			NOR = {
-				has_culture = culture:vlach
-				has_culture = culture:bulgarian
-			}
-		}
-		localization_key = knight_plural_lower_south_slavic_group
-	}
-
-	text = {
-		trigger = {
-			has_culture = culture:vlach
-		}
-		localization_key = knight_plural_lower_vlach
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bulgarian
-		}
-		localization_key = knight_plural_lower_bulgarian
-	}
-#####################################
-## West Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:pommeranian
-		}
-		localization_key = knight_plural_lower_pommeranian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:czech
-		}
-		localization_key = knight_plural_lower_czech
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polish
-		}
-		localization_key = knight_plural_lower_polish
-	}
-	text = {
-		trigger = {
-			has_culture = culture:polabian
-		}
-		localization_key = knight_plural_lower_polabian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:slovien
-		}
-		localization_key = knight_plural_lower_slovien
-	}
-#####################################
-## Magyar group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:mogyer
-		}
-		localization_key = knight_plural_lower_mogyer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hungarian
-		}
-		localization_key = knight_plural_lower_hungarian
-	}
-#####################################
-## Baltic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:latgalian
-		}
-		localization_key = knight_plural_lower_latgalian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:lithuanian
-		}
-		localization_key = knight_plural_lower_lithuanian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:prussian
-		}
-		localization_key = knight_plural_lower_prussian
-	}
-#####################################
-## East Slavic group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:russian
-		}
-		localization_key = knight_plural_lower_russian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:ilmenian
-		}
-		localization_key = knight_plural_lower_ilmenian
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:severian
-				has_culture = culture:volhynian
-			}
-		}
-		localization_key = knight_plural_lower_severian_volhynian
-	}
-#####################################
-## Akan group - to be added
-#####################################
-#####################################
-## Burman group - to be added
-#####################################
-#####################################
-## Central African group - to be added
-#####################################
-#####################################
-## Chinese group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:chinese_group ##Sic, in case someone adds a second culture
-		}
-		localization_key = knight_plural_lower_chinese_group
-	}
-#####################################
-## Dravidian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:tamil
-		}
-		localization_key = knight_plural_lower_tamil
-	}
-	text = {
-		trigger = {
-			has_culture = culture:telugu
-		}
-		localization_key = knight_plural_lower_telugu
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kannada
-		}
-		localization_key = knight_plural_lower_kannada
-	}
-#####################################
-## East African group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:ethiopian
-		}
-		localization_key = knight_plural_lower_ethiopian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nubian
-		}
-		localization_key = knight_plural_lower_nubian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:daju
-		}
-		localization_key = knight_plural_lower_daju
-	}
-#####################################
-## Indo-Aryan group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:bengali
-				has_culture = culture:oriya
-				has_culture = culture:assamese
-				has_culture = culture:gujarati
-				has_culture = culture:rajput
-				has_culture = culture:sindhi
-				has_culture = culture:marathi
-			}
-		}
-		localization_key = knight_plural_lower_indoaryan
-	}
-	text = {
-		trigger = {
-			has_culture = culture:hindustani
-		}
-		localization_key = knight_plural_lower_hindustani
-	}
-	text = {
-		trigger = {
-			has_culture = culture:punjabi
-		}
-		localization_key = knight_plural_lower_punjabi
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kashmiri
-		}
-		localization_key = knight_plural_lower_kashmiri
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sinhala
-		}
-		localization_key = knight_plural_lower_sinhala
-	}
-	text = {
-		trigger = {
-			has_culture = culture:nepali
-		}
-		localization_key = knight_plural_lower_nepali
-	}
-#####################################
-## Mongolic group
-#####################################
-	text = {
-		trigger = {
-			has_culture_group = culture_group:mongolic_group
-		}
-		localization_key = knight_plural_lower_mongolic_group
-	}
-#####################################
-## Sahelian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:songhai
-		}
-		localization_key = knight_plural_lower_songhai
-	}
-#####################################
-## Gaambi group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:serer
-		}
-		localization_key = knight_plural_lower_serer
-	}
-	text = {
-		trigger = {
-			has_culture = culture:wolof
-		}
-		localization_key = knight_plural_lower_wolof
-	}
-#####################################
-## Somalian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:beja
-		}
-		localization_key = knight_plural_lower_beja
-	}
-#####################################
-## Turkish group
-#####################################
-	text = {
-		trigger = {
-			OR = {
-				has_culture = culture:turkish
-				has_culture = culture:cuman
-				has_culture = culture:khazar
-				has_culture = culture:karluk
-				has_culture = culture:uyghur
-				has_culture = culture:yughur
-			}
-		}
-		localization_key = knight_plural_lower_turkish_one
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bolghar
-		}
-		localization_key = knight_plural_lower_bolghar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:bashkir
-		}
-		localization_key = knight_plural_lower_bashkir
-	}
-	text = {
-		trigger = {
-			has_culture = culture:avar
-		}
-		localization_key = knight_plural_lower_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kipchak
-		}
-		localization_key = knight_plural_lower_avar
-	}
-	text = {
-		trigger = {
-			has_culture = culture:kirghiz
-		}
-		localization_key = knight_plural_lower_kirghiz
-	}
-	text = {
-		trigger = {
-			has_culture = culture:chuvash
-		}
-		localization_key = knight_plural_lower_chuvash
-	}
-#####################################
-## Persian group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:persian
-		}
-		localization_key = knight_plural_lower_persian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:sogdian
-		}
-		localization_key = knight_plural_lower_sogdian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tocharian
-		}
-		localization_key = knight_plural_lower_tocharian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:saka
-		}
-		localization_key = knight_plural_lower_saka
-	}
-	text = {
-		trigger = {
-			has_culture = culture:khwarezmian
-		}
-		localization_key = knight_plural_lower_khwarezmian
-	}
-	text = {
-		trigger = {
-			has_culture = culture:tajik
-		}
-		localization_key = knight_plural_lower_tajik
-	}
-	
-#####################################
-## Guinean group
-#####################################
-	text = {
-		trigger = {
-			has_culture = culture:malinke
-		}
-		localization_key = knight_plural_lower_malinke
-	}
-
-#####################################
-## Default Fallback
-#####################################
-	text = {
-		localization_key = knight_plural_lower_default
 		fallback = yes
+		localization_key = duke_default_female_cath
+	}
+}
+DuchyCath = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath
+	}
+}
+IndepDuchyCath = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath
+	}
+}
+CountMaleCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_english_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_cath_english
+	}
+}
+CountFemaleCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_english_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_cath_english
+	}
+}
+CountyCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_english
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_english
+	}
+}
+IndepCountyCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_english
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_english
+	}
+}
+DukeMaleCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_english_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_cath_english
+	}
+}
+DukeFemaleCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_english_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_cath_english
+	}
+}
+DuchyCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_english
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_english
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_english
+	}
+}
+IndepDuchyCathEnglish = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_english
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_english
+	}
+}
+CountMaleCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_old_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_old_saxon
+	}
+}
+CountFemaleCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_old_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_old_saxon
+	}
+}
+CountyCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_old_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_old_saxon
+	}
+}
+IndepCountyCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_old_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_old_saxon
+	}
+}
+DukeMaleCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_old_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_old_saxon
+	}
+}
+DukeFemaleCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_old_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_old_saxon
+	}
+}
+DuchyCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_old_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_old_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_old_saxon
+	}
+}
+IndepDuchyCathOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_old_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_old_saxon
+	}
+}
+CountMaleCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_french_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_french
+	}
+}
+CountFemaleCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_french_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_french
+	}
+}
+CountyCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_french
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_french
+	}
+}
+IndepCountyCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_french
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_french
+	}
+}
+DukeMaleCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_french_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_french
+	}
+}
+DukeFemaleCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_french_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_french
+	}
+}
+DuchyCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_french
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_french
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_french
+	}
+}
+IndepDuchyCathFrench = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_french
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_french
+	}
+}
+CountMaleCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_norman_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_norman
+	}
+}
+CountFemaleCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_norman_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_norman
+	}
+}
+CountyCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_norman
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_norman
+	}
+}
+IndepCountyCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_norman
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_norman
+	}
+}
+DukeMaleCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_norman_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_norman
+	}
+}
+DukeFemaleCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_norman_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_norman
+	}
+}
+DuchyCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_norman
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_norman
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_norman
+	}
+}
+IndepDuchyCathNorman = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_norman
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_norman
+	}
+}
+CountMaleCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_occitan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_occitan
+	}
+}
+CountFemaleCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_occitan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_occitan
+	}
+}
+CountyCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_occitan
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_occitan
+	}
+}
+IndepCountyCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_occitan
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_occitan
+	}
+}
+DukeMaleCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_occitan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_occitan
+	}
+}
+DukeFemaleCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_occitan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_occitan
+	}
+}
+DuchyCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_occitan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_occitan
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_occitan
+	}
+}
+IndepDuchyCathOccitan = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_occitan
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_occitan
+	}
+}
+CountMaleCathBasque = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_basque
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_basque_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_basque
+	}
+}
+CountyCathBasque = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_basque
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_basque
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_basque
+	}
+}
+IndepCountyCathBasque = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_basque
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_basque
+	}
+}
+DukeMaleCathBasque = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_basque
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_basque_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_basque
+	}
+}
+DuchyCathBasque = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_basque
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_basque
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_basque
+	}
+}
+IndepDuchyCathBasuqe = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_basque
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_basque
+	}
+}
+CountMaleCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_castillian_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_castillian
+	}
+}
+CountFemaleCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_castillian_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_castillian
+	}
+}
+CountyCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_castillian
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_castillian
+	}
+}
+IndepCountyCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_castillian
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_castillian
+	}
+}
+DukeMaleCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_castillian_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_castillian
+	}
+}
+DukeFemaleCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_castillian_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_castillian
+	}
+}
+DuchyCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_castillian
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_castillian
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_castillian
+	}
+}
+IndepDuchyCathCastillian = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_castillian
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_castillian
+	}
+}
+CountMaleCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_catalan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_catalan
+	}
+}
+CountFemaleCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_catalan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_catalan
+	}
+}
+CountyCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_catalan
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_catalan
+	}
+}
+IndepCountyCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_catalan
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_catalan
+	}
+}
+DukeMaleCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_catalan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_catalan
+	}
+}
+DukeFemaleCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_catalan_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_catalan
+	}
+}
+DuchyCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_catalan
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_catalan
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_catalan
+	}
+}
+IndepDuchyCathCatalan = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_catalan
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_catalan
+	}
+}
+CountMaleCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_portuguese_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_portuguese
+	}
+}
+CountFemaleCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_portuguese_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_portuguese
+	}
+}
+CountyCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_portuguese
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_portuguese
+	}
+}
+IndepCountyCathPort = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_portuguese
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_portuguese
+	}
+}
+DukeMaleCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_portuguese_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_portuguese
+	}
+}
+DukeFemaleCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_portuguese_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_portuguese
+	}
+}
+DuchyCathPort = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_portuguese
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_portuguese
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_portuguese
+	}
+}
+IndepDuchyCathPort = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_portuguese
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_portuguese
+	}
+}
+CountMaleCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_saxon
+	}
+}
+CountFemaleCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_saxon
+	}
+}
+CountyCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_saxon
+	}
+}
+IndepCountyCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_saxon
+	}
+}
+DukeMaleCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_saxon
+	}
+}
+DukeFemaleCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_saxon_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_saxon
+	}
+}
+DuchyCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_saxon
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_saxon
+	}
+}
+IndepDuchyCathSaxon = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_mhg
+	}
+}
+CountMaleCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_mhg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_mhg
+	}
+}
+CountFemaleCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_mhg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_mhg
+	}
+}
+CountyCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_mhg
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_mhg
+	}
+}
+IndepCountyCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_mhg
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_mhg
+	}
+}
+DukeMaleCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_mhg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_mhg
+	}
+}
+DukeFemaleCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_mhg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_mhg
+	}
+}
+DuchyCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_mhg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_mhg
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_mhg
+	}
+}
+IndepDuchyCathMHG = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_mhg
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_mhg
+	}
+}
+CountCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_cath_dutch
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_theo_cath_dutch_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_cath_dutch
+	}
+}
+CountyCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_dutch
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_dutch
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_dutch
+	}
+}
+IndepCountyCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_dutch
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_dutch
+	}
+}
+DukeCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_cath_dutch
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_theo_cath_dutch_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_dutch
+	}
+}
+DuchyCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duchy_cath_dutch
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_dutch
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_dutch
+	}
+}
+IndepDuchyCathDutch = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_dutch
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_dutch
+	}
+}
+CountMaleCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_low_frankish_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_low_frankish
+	}
+}
+CountFemaleCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_low_frankish_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_low_frankish
+	}
+}
+CountyCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_low_frankish
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_low_frankish
+	}
+}
+IndepCountyCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_low_frankish
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_low_frankish
+	}
+}
+DukeMaleCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_low_frankish_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_low_frankish
+	}
+}
+DukeFemaleCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_low_frankish_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_low_frankish
+	}
+}
+DuchyCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_low_frankish
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_low_frankish
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_low_frankish
+	}
+}
+IndepDuchyCathLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_low_frankish
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_low_frankish
+	}
+}
+CountMaleCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_male_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_male_theo_cath_ohg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_male_cath_ohg
+	}
+}
+CountFemaleCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_count_female_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = count_female_theo_cath_ohg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = count_default_female_cath_ohg
+	}
+}
+CountyCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_county_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_county
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_county_cath_ohg
+	}
+	text = {
+		fallback = yes
+		localization_key = county_default_cath_ohg
+	}
+}
+IndepCountyCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_default_cath_ohg
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_cath_ohg
+	}
+}
+DukeMaleCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_male_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_male_theo_cath_ohg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_male_cath_ohg
+	}
+}
+DukeFemaleCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurst_duke_female_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = duke_female_theo_cath_ohg_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = duke_default_female_cath_ohg
+	}
+}
+DuchyCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+				any_elector = {
+					this = root
+				}
+			}
+		}
+		localization_key = kurfurstdom_duchy_cath_ohg
+	}
+	text = {
+		trigger = {
+			exists = liege
+			liege.primary_title = {
+				has_title_law = princely_elective_succession_law
+			}
+			highest_held_title_tier = tier_duchy
+			OR = {
+				AND = {
+					has_realm_law = crown_authority_1
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_2
+					liege = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+				AND = {
+					has_realm_law = crown_authority_3
+					liege = {
+						NOT = {
+							has_realm_law = crown_authority_3
+						}
+					}
+				}
+			}
+		}
+		localization_key = independent_duchy_cath_ohg
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_cath_ohg
+	}
+}
+IndepDuchyCathOHG = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_kingdom
+		}
+		localization_key = duchy_default_cath_ohg
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_cath_ohg
 	}
 }
