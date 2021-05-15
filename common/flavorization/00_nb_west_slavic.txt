@@ -1,0 +1,944 @@
+﻿## carantanian slovien ##
+baron_male_slovien = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+baron_female_slovien = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+barony_castle_slovien = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	holding = castle_holding
+	top_liege = no
+}
+count_male_slovien = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+count_female_slovien = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+county_slovien = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_male_slovien = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_female_slovien = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duchy_slovien = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_male_slovien = {
+	type = character
+	gender = male
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_female_slovien = {
+	type = character
+	gender = female
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+kingdom_slovien = {
+	type = title
+	priority = 143
+	tier = kingdom
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+emperor_male_slovien = {
+	type = character
+	gender = male
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+emperor_female_slovien = {
+	type = character
+	gender = female
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+empire_slovien = {
+	type = title
+	priority = 153
+	tier = empire
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_male_slovien_duchy = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = duchy
+	priority = 120
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_slovien_duchy = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = duchy
+	priority = 120
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_slovien = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_slovien = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_slovien_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_slovien_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_slovien = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_slovien = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { carantanian slovien }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_republic_slovien = {
+	type = character
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_slovien = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	holding = city_holding
+	top_liege = no
+}
+county_republic_slovien = {
+	type = title
+	tier = county
+	priority = 113
+	cultures = { carantanian slovien }
+	governments = { republic_government }
+	top_liege = no
+}
+barony_tribe_slovien = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { carantanian slovien }
+	holding = tribal_holding
+	top_liege = no
+}
+
+## sorbian lutici polabian ##
+baron_male_polabian = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+baron_female_polabian = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+barony_castle_polabian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	holding = castle_holding
+	top_liege = no
+}
+count_male_polabian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+count_female_polabian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+county_polabian = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_male_polabian = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_female_polabian = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duchy_polabian = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_male_polabian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_female_polabian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+kingdom_polabian = {
+	type = title
+	priority = 143
+	tier = kingdom
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+emperor_male_polabian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+emperor_female_polabian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+empire_polabian = {
+	type = title
+	priority = 153
+	tier = empire
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_male_polabian = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_polabian = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_polabian_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_polabian_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_polabian = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_polabian = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { sorbian lutici polabian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_male_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+baron_female_republic_polabian = {
+	type = character
+	special = holder
+	gender = female
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_polabian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	holding = city_holding
+	top_liege = no
+}
+count_male_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 113
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+count_female_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 113
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+county_republic_polabian = {
+	type = title
+	tier = county
+	priority = 113
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+}
+duke_male_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+duke_female_republic_polabian = {
+	type = character
+	special = holder
+	gender = female
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+duchy_republic_polabian = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+}
+king_male_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 143
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+king_female_republic_polabian = {
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 143
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_republic_polabian = {
+	type = title
+	tier = kingdom
+	priority = 143
+	cultures = { sorbian lutici polabian }
+	governments = { republic_government }
+	top_liege = no
+}
+barony_tribe_polabian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { sorbian lutici polabian }
+	holding = tribal_holding
+	top_liege = no
+}
+
+## silesian polish ##
+baron_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+baron_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+barony_castle_polish = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	holding = castle_holding
+	top_liege = no
+}
+count_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+count_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+county_polish = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duchy_polish = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_female_holder_polish = {
+	type = character
+	gender = female
+	special = holder
+	priority = 144
+	tier = kingdom
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_polish = {
+	type = title
+	priority = 143
+	tier = kingdom
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+emperor_male_polish = {
+	type = character
+	gender = male
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+emperor_female_polish = {
+	type = character
+	gender = female
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+emperor_female_holder_polish = {
+	type = character
+	gender = female
+	special = holder
+	priority = 154
+	tier = empire
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+empire_polish = {
+	type = title
+	priority = 153
+	tier = empire
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_male_polish_duchy = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = duchy
+	priority = 120
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_polish_duchy = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = duchy
+	priority = 120
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_polish = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_polish = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_polish_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_polish_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_polish = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_polish = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { silesian polish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_male_republic_polish = {
+	type = character
+	special = holder
+	gender = male
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+baron_female_republic_polish = {
+	type = character
+	special = holder
+	gender = female
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_polish = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	holding = city_holding
+	top_liege = no
+}
+count_male_republic_polish = {
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 113
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+count_female_republic_polish = {
+	type = character
+	special = holder
+	gender = male
+	tier = county
+	priority = 113
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+county_republic_polish = {
+	type = title
+	tier = county
+	priority = 113
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+}
+duke_republic_polish = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+duchy_republic_polish = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+}
+king_male_republic_polish = {
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 143
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+king_female_republic_polish = {
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 143
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_republic_polish = {
+	type = title
+	tier = kingdom
+	priority = 143
+	cultures = { silesian polish }
+	governments = { republic_government }
+	top_liege = no
+}
+barony_tribe_polish = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { silesian polish }
+	holding = tribal_holding
+	top_liege = no
+}

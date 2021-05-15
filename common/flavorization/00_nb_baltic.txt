@@ -1,0 +1,305 @@
+﻿###############################################
+#livonian latgalian
+
+baron_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+baron_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+barony_castle_latgalian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	holding = castle_holding
+	top_liege = no
+}
+count_feudalclan_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government }
+	top_liege = no
+}
+count_feudalclan_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government }
+	top_liege = no
+}
+county_feudalclan_latgalian = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government }
+	top_liege = no
+}
+duke_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duke_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+duchy_latgalian = {
+	type = title
+	tier = duchy
+	priority = 123
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+king_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 143
+	tier = kingdom
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+kingdom_latgalian = {
+	type = title
+	priority = 143
+	tier = kingdom
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+emperor_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+emperor_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 153
+	tier = empire
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+empire_latgalian = {
+	type = title
+	priority = 153
+	tier = empire
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_male_latgalian = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_latgalian = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_latgalian_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_latgalian_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_latgalian ={
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_latgalian ={
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { livonian latgalian }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_republic_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+baron_republic_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	governments = { republic_government }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_latgalian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	holding = city_holding
+	top_liege = no
+}
+barony_tribe_latgalian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	holding = tribal_holding
+	top_liege = no
+}
+count_tribal_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+count_tribal_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+county_tribal_latgalian = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+barony_tribal_latgalian = {
+	type = title
+	tier = barony
+	priority = 103
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+count_tribal_male_latgalian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+count_tribal_female_latgalian = {
+	type = character
+	gender = female
+	special = holder
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}
+county_tribal_latgalian = {
+	type = title
+	priority = 113
+	tier = county
+	cultures = { livonian latgalian }
+	governments = { tribal_government }
+	top_liege = no
+}

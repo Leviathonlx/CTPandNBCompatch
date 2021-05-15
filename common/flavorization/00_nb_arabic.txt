@@ -1,0 +1,399 @@
+﻿###############################################
+## Egyptian_culture and Coptic_faith##
+
+baron_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 105
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+baron_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 105
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+barony_castle_egyptian_coptic = {
+	type = title
+	tier = barony
+	priority = 104
+	
+	holding = castle_holding
+	cultures = { coptic }
+	top_liege = no
+}
+count_feudalclan_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+count_feudalclan_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+county_feudalclan_egyptian_coptic = {
+	type = title
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duke_feudalclan_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 125
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duke_feudalclan_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 125
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duchy_feudalclan_egyptian_coptic = {
+	type = title
+	tier = duchy
+	priority = 125
+	
+	governments = { feudal_government clan_government }
+	cultures = { coptic }
+	top_liege = no
+}
+king_feudalclan_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 144
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+king_feudalclan_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 144
+	 
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+kingdom_feudalclan_egyptian_coptic = {
+	type = title
+	tier = kingdom
+	priority = 144
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+emperor_feudalclan_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	
+	priority = 154
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+emperor_feudalclan_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	
+	priority = 154
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+empire_feudalclan_egyptian_coptic = {
+	type = title
+	tier = empire
+	priority = 154
+	
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+title_prince_male_eqyptian_coptic = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 132
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+title_prince_female_eqyptian_coptic = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 132
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+title_prince_male_eqyptian_coptic_empire = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 132
+	
+	governments = { feudal_government republic_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+title_prince_female_eqyptian_coptic_empire = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 132
+	
+	governments = { feudal_government republic_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+queen_mother_eqyptian_coptic = {
+	type = character
+	special = queen_mother
+	tier = kingdom
+	priority = 132
+	
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+empress_mother_eqyptian_coptic = {
+	type = character
+	special = queen_mother
+	tier = empire
+	priority = 132
+	
+	governments = { feudal_government republic_government clan_government tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+baron_republic_egyptian_coptic = {
+	type = character
+	special = holder
+	tier = barony
+	priority = 105
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_egyptian_coptic = {
+	type = title
+	tier = barony
+	priority = 104
+	
+	holding = city_holding
+	cultures = { coptic }
+	top_liege = no
+}
+count_republic_egyptian_coptic = {
+	type = character
+	special = holder
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+county_republic_egyptian_coptic = {
+	type = title
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duke_republic_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+duke_republic_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+duchy_republic_egyptian_coptic = {
+	type = title
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+king_republic_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 147 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+king_republic_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 147 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_republic_egyptian_coptic = {
+	type = title
+	tier = kingdom
+	priority = 147 #overwrite
+	
+	governments = { republic_government }
+	cultures = { coptic }
+	top_liege = no
+}
+barony_tribe_egyptian_coptic = {
+	type = title
+	tier = barony
+	priority = 104
+	
+	holding = tribal_holding
+	cultures = { coptic }
+	top_liege = no
+}
+count_tribal_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+count_tribal_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+county_tribal_egyptian_coptic = {
+	type = title
+	tier = county
+	priority = 117 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duke_tribal_male_egyptian_coptic = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duke_tribal_female_egyptian_coptic = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
+duchy_tribal_egyptian_coptic = {
+	type = title
+	tier = duchy
+	priority = 127 #overwrite
+	
+	governments = { tribal_government }
+	cultures = { coptic }
+	top_liege = no
+}
