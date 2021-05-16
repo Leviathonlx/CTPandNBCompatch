@@ -1,8 +1,8 @@
-l_english:
+﻿l_english:
 
-########################################################### 
- #Goidelic Culture Group
-########################################################### 
+  ########################################################### 
+   #Goidelic Culture Group
+  ########################################################### 
   barony_castle_goidelic_group: "Túath"
   barony_tribe_goidelic_group: "Túath"
   baron_male_gael_norse: "Tigerna"
@@ -2616,67 +2616,67 @@ l_english:
   duke_tribal_female_arabic_group: "Šayḵa"
   duke_tribal_female_arabic_group_holder: "$duke_tribal_male_arabic_group$"
   duchy_tribal_arabic_group: "Qabīla"
-######################################################
+  ######################################################
   #Egyptian Coptic
-######################################################
-   baron_male_egyptian_coptic: "Nəbiohi"
-   baron_female_egyptian_coptic: "Nəbiohi"
-   barony_castle_egyptian_coptic: "Mətnêb"
+  ######################################################
+  baron_male_egyptian_coptic: "Nəbiohi"
+  baron_female_egyptian_coptic: "Nəbiohi"
+  barony_castle_egyptian_coptic: "Mətnêb"
  
-   count_feudalclan_male_egyptian_coptic: "Amira"
-   count_feudalclan_female_egyptian_coptic: "Amirissa"
-   county_feudalclan_egyptian_coptic: "Amiraton"
+  count_feudalclan_male_egyptian_coptic: "Amira"
+  count_feudalclan_female_egyptian_coptic: "Amirissa"
+  county_feudalclan_egyptian_coptic: "Amiraton"
  
-   duke_feudalclan_male_egyptian_coptic: "[CHARACTER.Custom('DukeMaleCoptic')]"
-   duke_feudalclan_female_egyptian_coptic: "[CHARACTER.Custom('DukeFemaleCoptic')]"
-   duchy_feudalclan_egyptian_coptic: "[CHARACTER.Custom('DuchyCoptic')]"
-   marquess_coptic: "Təšə"
-   march_coptic: "Manpôrj"
-   palatine_male_coptic: "Palatinos"
-   palatine_female_coptic: "Palatinissa"
-   palatinate_coptic: "Palatinaton"
-   duke_default_male_coptic: "Əparkhos"
-   duke_default_female_coptic: "Əparkhissa"
-   duchy_default_coptic: "Əparkhia"
+  duke_feudalclan_male_egyptian_coptic: "[CHARACTER.Custom('DukeMaleCoptic')]"
+  duke_feudalclan_female_egyptian_coptic: "[CHARACTER.Custom('DukeFemaleCoptic')]"
+  duchy_feudalclan_egyptian_coptic: "[CHARACTER.Custom('DuchyCoptic')]"
+  marquess_coptic: "Təšə"
+  march_coptic: "Manpôrj"
+  palatine_male_coptic: "Palatinos"
+  palatine_female_coptic: "Palatinissa"
+  palatinate_coptic: "Palatinaton"
+  duke_default_male_coptic: "Əparkhos"
+  duke_default_female_coptic: "Əparkhissa"
+  duchy_default_coptic: "Əparkhia"
  
-   king_feudalclan_male_egyptian_coptic: "Rro"
-   king_feudalclan_female_egyptian_coptic: "Rrō"
-   kingdom_feudalclan_egyptian_coptic: "Mntrro"
+  king_feudalclan_male_egyptian_coptic: "Rro"
+  king_feudalclan_female_egyptian_coptic: "Rrō"
+  kingdom_feudalclan_egyptian_coptic: "Mntrro"
  
-   emperor_feudalclan_male_egyptian_coptic: "Autokratôr"
-   emperor_feudalclan_female_egyptian_coptic: "Autokratəira"
-   empire_feudalclan_egyptian_coptic: "Autokratôria"
+  emperor_feudalclan_male_egyptian_coptic: "Autokratôr"
+  emperor_feudalclan_female_egyptian_coptic: "Autokratəira"
+  empire_feudalclan_egyptian_coptic: "Autokratôria"
 
-   title_prince_male_eqyptian_coptic: "Priggipos"
-   title_prince_female_eqyptian_coptic: "Priggipissa"
-   title_prince_male_eqyptian_coptic_empire: "Kaisar"
-   title_prince_female_eqyptian_coptic_empire: "Kaisarissa"
-   queen_mother_eqyptian_coptic: "Rrō Maau"
-   empress_mother_eqyptian_coptic: "Autokratəira Maau"
-   
-   baron_republic_egyptian_coptic: "Lašanə"
-   barony_city_egyptian_coptic: "Baki"
-   count_republic_egyptian_coptic: "Rêt"
-   county_republic_egyptian_coptic: "Toš"
-   duke_republic_male_egyptian_coptic: "Bouləutês"
-   duke_republic_female_egyptian_coptic: "Bouləutis"
-   duchy_republic_egyptian_coptic: "Bouləutêrion"
-   king_republic_male_egyptian_coptic: "Protopolitês"
-   king_republic_female_egyptian_coptic: "Protopolitis"
-   kingdom_republic_egyptian_coptic: "Dêmosion"
-   
-   barony_tribe_egyptian_coptic: "$county_tribal_egyptian_coptic$"
-   count_tribal_male_egyptian_coptic: "Phularkhos"
-   count_tribal_female_egyptian_coptic: "Phularkhissa"
-   county_tribal_egyptian_coptic: "Phulê"
-   duke_tribal_male_egyptian_coptic: "Anaks"
-   duke_tribal_female_egyptian_coptic: "Anassa"
-   duchy_tribal_egyptian_coptic: "Anaktoria"
-########################################################
- #Byzantine Culture Group
-########################################################
-  #Armenian
-########################################################
+  title_prince_male_eqyptian_coptic: "Priggipos"
+  title_prince_female_eqyptian_coptic: "Priggipissa"
+  title_prince_male_eqyptian_coptic_empire: "Kaisar"
+  title_prince_female_eqyptian_coptic_empire: "Kaisarissa"
+  queen_mother_eqyptian_coptic: "Rrō Maau"
+  empress_mother_eqyptian_coptic: "Autokratəira Maau"
+  
+  baron_republic_egyptian_coptic: "Lašanə"
+  barony_city_egyptian_coptic: "Baki"
+  count_republic_egyptian_coptic: "Rêt"
+  county_republic_egyptian_coptic: "Toš"
+  duke_republic_male_egyptian_coptic: "Bouləutês"
+  duke_republic_female_egyptian_coptic: "Bouləutis"
+  duchy_republic_egyptian_coptic: "Bouləutêrion"
+  king_republic_male_egyptian_coptic: "Protopolitês"
+  king_republic_female_egyptian_coptic: "Protopolitis"
+  kingdom_republic_egyptian_coptic: "Dêmosion"
+  
+  barony_tribe_egyptian_coptic: "$county_tribal_egyptian_coptic$"
+  count_tribal_male_egyptian_coptic: "Phularkhos"
+  count_tribal_female_egyptian_coptic: "Phularkhissa"
+  county_tribal_egyptian_coptic: "Phulê"
+  duke_tribal_male_egyptian_coptic: "Anaks"
+  duke_tribal_female_egyptian_coptic: "Anassa"
+  duchy_tribal_egyptian_coptic: "Anaktoria"
+  ########################################################
+   #Byzantine Culture Group
+  ########################################################
+    #Armenian
+  ########################################################
    baron_male_armenian: "Azat"
    baron_female_armenian: "Azatakin"
    barony_castle_armenian: "Gawaṙ"

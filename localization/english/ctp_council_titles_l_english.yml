@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 ##CTP ADDED TITLES
  councillor_chancellor_ctp: "[ROOT.Char.Custom('CouncilPositionChancellor')]"
  councillor_steward_ctp: "[ROOT.Char.Custom('CouncilPositionSteward')]"
