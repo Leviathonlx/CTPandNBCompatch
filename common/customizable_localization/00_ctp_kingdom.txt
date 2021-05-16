@@ -1,4 +1,4 @@
-SultanMaleGoidelic = {
+﻿SultanMaleGoidelic = {
 	type = character
 	text = {
 		trigger = {

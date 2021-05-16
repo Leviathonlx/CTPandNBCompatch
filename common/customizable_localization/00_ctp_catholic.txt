@@ -1,4 +1,4 @@
-CountMaleCath = {
+﻿CountMaleCath = {
 	type = character
 	text = {
 		trigger = {

@@ -1,4 +1,4 @@
-#Norse/Norwegian Icelandic
+﻿#Norse/Norwegian Icelandic
 pope_man_norse_norwegian = {
 	type = character
 	gender = male

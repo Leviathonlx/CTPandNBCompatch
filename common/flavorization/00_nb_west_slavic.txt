@@ -1,4 +1,4 @@
-## carantanian slovien ##
+﻿## carantanian slovien ##
 baron_male_slovien = {
 	type = character
 	gender = male

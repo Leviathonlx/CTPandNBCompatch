@@ -1,4 +1,4 @@
-DynastyMaleIrish = {
+﻿DynastyMaleIrish = {
 	type = character
 	text = {
 		trigger = {

@@ -1,4 +1,4 @@
-DynastGoidIndepCountMale = {
+﻿DynastGoidIndepCountMale = {
 	type = character
 	text = {
 		trigger = {
