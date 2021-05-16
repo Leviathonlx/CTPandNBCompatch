@@ -1,4 +1,4 @@
-﻿## carantanian slovien ##
+## carantanian slovien ##
 baron_male_slovien = {
 	type = character
 	gender = male
@@ -584,14 +584,14 @@ barony_tribe_polabian = {
 	top_liege = no
 }
 
-## silesian polish ##
+## polish ##
 baron_male_polish = {
 	type = character
 	gender = male
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -601,7 +601,7 @@ baron_female_polish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -609,7 +609,7 @@ barony_castle_polish = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	holding = castle_holding
 	top_liege = no
 }
@@ -619,7 +619,7 @@ count_male_polish = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -629,7 +629,7 @@ count_female_polish = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -637,7 +637,7 @@ county_polish = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -647,7 +647,7 @@ duke_male_polish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -657,7 +657,7 @@ duke_female_polish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -665,7 +665,7 @@ duchy_polish = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -675,7 +675,7 @@ king_male_polish = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -685,7 +685,7 @@ king_female_polish = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -695,7 +695,7 @@ king_female_holder_polish = {
 	special = holder
 	priority = 144
 	tier = kingdom
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_holder = yes
@@ -704,7 +704,7 @@ kingdom_polish = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -714,7 +714,7 @@ emperor_male_polish = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -724,7 +724,7 @@ emperor_female_polish = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -734,7 +734,7 @@ emperor_female_holder_polish = {
 	special = holder
 	priority = 154
 	tier = empire
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -742,7 +742,7 @@ empire_polish = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -752,7 +752,7 @@ title_prince_male_polish_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 120
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -762,7 +762,7 @@ title_prince_female_polish_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 120
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -772,7 +772,7 @@ title_prince_male_polish = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -782,7 +782,7 @@ title_prince_female_polish = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -792,7 +792,7 @@ title_prince_male_polish_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -802,7 +802,7 @@ title_prince_female_polish_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -812,7 +812,7 @@ queen_mother_polish = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -822,7 +822,7 @@ empress_mother_polish = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -832,7 +832,7 @@ baron_male_republic_polish = {
 	gender = male
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -843,7 +843,7 @@ baron_female_republic_polish = {
 	gender = female
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -852,7 +852,7 @@ barony_city_polish = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	holding = city_holding
 	top_liege = no
 }
@@ -862,7 +862,7 @@ count_male_republic_polish = {
 	gender = male
 	tier = county
 	priority = 113
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -873,7 +873,7 @@ count_female_republic_polish = {
 	gender = male
 	tier = county
 	priority = 113
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -882,7 +882,7 @@ county_republic_polish = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -891,7 +891,7 @@ duke_republic_polish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -900,7 +900,7 @@ duchy_republic_polish = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -910,7 +910,7 @@ king_male_republic_polish = {
 	gender = male
 	tier = kingdom
 	priority = 143
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -921,7 +921,7 @@ king_female_republic_polish = {
 	gender = male
 	tier = kingdom
 	priority = 143
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -930,7 +930,7 @@ kingdom_republic_polish = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { silesian polish }
+	cultures = { polish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -938,7 +938,7 @@ barony_tribe_polish = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { silesian polish }
+	cultures = { polish }
 	holding = tribal_holding
 	top_liege = no
 }
