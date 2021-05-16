@@ -1,4 +1,95 @@
-﻿#gothic swedish danish/
+#Norse/Norwegian Icelandic
+pope_man_norse_norwegian = {
+	type = character
+	gender = male
+	special = holder
+	priority = 501
+	titles = { k_papal_state }
+	top_liege = no
+	cultures = { norse norwegian icelandic }
+	only_holder = yes
+}
+grand_master_cath_norse_norwegian = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 301
+	governments = { holy_order_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+	only_holder = yes
+}
+baron_theo_cath_norse_norwegian = {
+	type = character
+	special = holder
+	tier = barony
+	priority = 203
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+	only_holder = yes
+}
+barony_hold_cath_norse_norwegian = {
+	type = title
+	tier = barony
+	priority = 203
+	holding = church_holding
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+}
+barony_theo_cath_norse_norwegian = {
+	type = title
+	tier = barony
+	priority = 204
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+}
+count_theo_cath_norse_norwegian = {
+	type = character
+	special = holder
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+	only_holder = yes
+}
+county_theo_cath_norse_norwegian = {
+	type = title
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+}
+duke_theo_cath_norse_norwegian = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+	only_holder = yes
+}
+duchy_theo_cath_norse_norwegian = {
+	type = title
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { norse norwegian icelandic }
+	top_liege = no
+}
+#gothic swedish danish gutnish
 pope_man_swedish_danish = {
 	type = character
 	gender = male
@@ -6,7 +97,7 @@ pope_man_swedish_danish = {
 	priority = 501
 	titles = { k_papal_state }
 	top_liege = no
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	only_holder = yes
 }
 grand_master_cath_swedish_danish = {
@@ -16,7 +107,7 @@ grand_master_cath_swedish_danish = {
 	priority = 301
 	governments = { holy_order_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 	only_holder = yes
 }
@@ -27,7 +118,7 @@ baron_theo_cath_swedish_danish = {
 	priority = 203
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 	only_holder = yes
 }
@@ -37,7 +128,7 @@ barony_hold_cath_swedish_danish = {
 	priority = 203
 	holding = church_holding
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 }
 barony_theo_cath_swedish_danish = {
@@ -46,7 +137,7 @@ barony_theo_cath_swedish_danish = {
 	priority = 204
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 }
 count_theo_cath_swedish_danish = {
@@ -56,7 +147,7 @@ count_theo_cath_swedish_danish = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 	only_holder = yes
 }
@@ -66,7 +157,7 @@ county_theo_cath_swedish_danish = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 }
 duke_theo_cath_swedish_danish = {
@@ -76,7 +167,7 @@ duke_theo_cath_swedish_danish = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 	only_holder = yes
 }
@@ -86,7 +177,7 @@ duchy_theo_cath_swedish_danish = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { gothic swedish danish  }
+	cultures = { gothic swedish danish gutnish }
 	top_liege = no
 }
 
@@ -550,7 +641,7 @@ pope_man_mhg = {
 	priority = 501
 	titles = { k_papal_state }
 	top_liege = no
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	only_holder = yes
 }
 pope_woman_mhg = {
@@ -560,7 +651,7 @@ pope_woman_mhg = {
 	priority = 501
 	titles = { k_papal_state }
 	top_liege = no
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	only_holder = yes
 }
 grand_master_male_cath_mhg = {
@@ -571,7 +662,7 @@ grand_master_male_cath_mhg = {
 	priority = 301
 	governments = { holy_order_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -583,7 +674,7 @@ grand_master_female_cath_mhg = {
 	priority = 301
 	governments = { holy_order_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -595,7 +686,7 @@ baron_male_theo_cath_mhg = {
 	priority = 203
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -607,7 +698,7 @@ baron_female_theo_cath_mhg = {
 	priority = 203
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -617,7 +708,7 @@ barony_hold_cath_mhg = {
 	priority = 203
 	holding = church_holding
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 barony_theo_cath_mhg = {
@@ -626,7 +717,7 @@ barony_theo_cath_mhg = {
 	priority = 204
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 count_male_theo_cath_mhg = {
@@ -637,7 +728,7 @@ count_male_theo_cath_mhg = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -649,7 +740,7 @@ count_female_theo_cath_mhg = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -659,7 +750,7 @@ county_theo_cath_mhg = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 count_male_theo_cath_mhg_independent = {
@@ -670,7 +761,7 @@ count_male_theo_cath_mhg_independent = {
 	priority = 214
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 	only_independent = yes
@@ -683,7 +774,7 @@ count_female_theo_cath_mhg_independent = {
 	priority = 214
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 	only_independent = yes
@@ -694,7 +785,7 @@ county_theo_cath_mhg_independent = {
 	priority = 214
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_independent = yes
 }
@@ -706,7 +797,7 @@ duke_male_theo_cath_mhg = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -718,7 +809,7 @@ duke_female_theo_cath_mhg = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -728,7 +819,7 @@ duchy_theo_cath_mhg = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 duke_male_theo_cath_mhg_independent = {
@@ -739,7 +830,7 @@ duke_male_theo_cath_mhg_independent = {
 	priority = 224
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 	only_independent = yes
@@ -752,7 +843,7 @@ duke_female_theo_cath_mhg_independent = {
 	priority = 224
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 	only_independent = yes
@@ -763,7 +854,7 @@ duchy_theo_cath_mhg_independent = {
 	priority = 224
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_independent = yes
 }
@@ -774,7 +865,7 @@ king_theo_cath_mhg = {
 	priority = 243
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -784,7 +875,7 @@ kingdom_theo_cath_mhg = {
 	priority = 243
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 emperor_male_theo_cath_mhg = {
@@ -795,7 +886,7 @@ emperor_male_theo_cath_mhg = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -807,7 +898,7 @@ emperor_female_theo_cath_mhg = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 	only_holder = yes
 }
@@ -817,11 +908,290 @@ empire_theo_cath_mhg = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian }
+	cultures = { franconian swabian bavarian ripuarisch alemannic thuringian silesian }
 	top_liege = no
 }
 
-#silesian polish
+#ohg
+pope_man_ohg = {
+	type = character
+	gender = male
+	special = holder
+	priority = 501
+	titles = { k_papal_state }
+	top_liege = no
+	cultures = { high_frankish old_alemannic old_bavarian }
+	only_holder = yes
+}
+pope_woman_ohg = {
+	type = character
+	gender = female
+	special = holder
+	priority = 501
+	titles = { k_papal_state }
+	top_liege = no
+	cultures = { high_frankish old_alemannic old_bavarian }
+	only_holder = yes
+}
+grand_master_male_cath_ohg = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 301
+	governments = { holy_order_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+grand_master_female_cath_ohg = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 301
+	governments = { holy_order_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+baron_male_theo_cath_ohg = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 203
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+baron_female_theo_cath_ohg = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 203
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+barony_hold_cath_ohg = {
+	type = title
+	tier = barony
+	priority = 203
+	holding = church_holding
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+barony_theo_cath_ohg = {
+	type = title
+	tier = barony
+	priority = 204
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+count_male_theo_cath_ohg = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+count_female_theo_cath_ohg = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+county_theo_cath_ohg = {
+	type = title
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+count_male_theo_cath_ohg_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+count_female_theo_cath_ohg_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+county_theo_cath_ohg_independent = {
+	type = title
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_independent = yes
+}
+duke_male_theo_cath_ohg = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+duke_female_theo_cath_ohg = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+duchy_theo_cath_ohg = {
+	type = title
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+duke_male_theo_cath_ohg_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+duke_female_theo_cath_ohg_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+duchy_theo_cath_ohg_independent = {
+	type = title
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_independent = yes
+}
+king_theo_cath_ohg = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 243
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_theo_cath_ohg = {
+	type = title
+	tier = kingdom
+	priority = 243
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+emperor_male_theo_cath_ohg = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+emperor_female_theo_cath_ohg = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+	only_holder = yes
+}
+empire_theo_cath_ohg = {
+	type = title
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { high_frankish old_alemannic old_bavarian }
+	top_liege = no
+}
+
+#polish
 pope_man_polish = {
 	type = character
 	gender = male
@@ -829,7 +1199,7 @@ pope_man_polish = {
 	priority = 501
 	titles = { k_papal_state }
 	top_liege = no
-	cultures = { silesian polish }
+	cultures = { polish }
 	only_holder = yes
 }
 pope_woman_polish = {
@@ -839,7 +1209,7 @@ pope_woman_polish = {
 	priority = 501
 	titles = { k_papal_state }
 	top_liege = no
-	cultures = { silesian polish }
+	cultures = { polish }
 	only_holder = yes
 }
 grand_master_male_cath_polish  = {
@@ -850,7 +1220,7 @@ grand_master_male_cath_polish  = {
 	priority = 301
 	governments = { holy_order_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -862,7 +1232,7 @@ grand_master_female_cath_polish  = {
 	priority = 301
 	governments = { holy_order_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -874,7 +1244,7 @@ baron_male_theo_cath_polish = {
 	priority = 203
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -886,7 +1256,7 @@ baron_female_theo_cath_polish = {
 	priority = 203
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -896,7 +1266,7 @@ barony_hold_cath_polish = {
 	priority = 203
 	holding = church_holding
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 }
 barony_theo_cath_polish = {
@@ -905,7 +1275,7 @@ barony_theo_cath_polish = {
 	priority = 204
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 }
 count_male_theo_cath_polish = {
@@ -916,7 +1286,7 @@ count_male_theo_cath_polish = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -928,7 +1298,7 @@ count_female_theo_cath_polish = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -938,7 +1308,7 @@ county_theo_cath_polish = {
 	priority = 213
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 }
 duke_male_theo_cath_polish = {
@@ -949,7 +1319,7 @@ duke_male_theo_cath_polish = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -961,7 +1331,7 @@ duke_female_theo_cath_polish = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -971,7 +1341,7 @@ duchy_theo_cath_polish = {
 	priority = 223
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 }
 king_male_theo_cath_polish = {
@@ -982,7 +1352,7 @@ king_male_theo_cath_polish = {
 	priority = 243
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -994,7 +1364,7 @@ king_female_theo_cath_polish = {
 	priority = 243
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -1004,7 +1374,7 @@ kingdom_theo_cath_polish = {
 	priority = 243
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 }
 emperor_male_theo_cath_polish = {
@@ -1015,7 +1385,7 @@ emperor_male_theo_cath_polish = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -1027,7 +1397,7 @@ emperor_female_theo_cath_polish = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
 	top_liege = no
 	only_holder = yes
 }
@@ -1037,7 +1407,286 @@ empire_theo_cath_polish = {
 	priority = 253
 	governments = { theocracy_government }
 	faiths = { catholic waldensian insular_celtic lollard }
-	cultures = { silesian polish }
+	cultures = { polish }
+	top_liege = no
+}
+
+#old_saxon
+pope_man_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	priority = 501
+	titles = { k_papal_state }
+	top_liege = no
+	cultures = { old_saxon }
+	only_holder = yes
+}
+pope_woman_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	priority = 501
+	titles = { k_papal_state }
+	top_liege = no
+	cultures = { old_saxon }
+	only_holder = yes
+}
+grand_master_male_cath_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 301
+	governments = { holy_order_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+grand_master_female_cath_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 301
+	governments = { holy_order_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+baron_male_theo_cath_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 203
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+baron_female_theo_cath_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 203
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+barony_hold_cath_old_saxon = {
+	type = title
+	tier = barony
+	priority = 203
+	holding = church_holding
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+}
+barony_theo_cath_old_saxon = {
+	type = title
+	tier = barony
+	priority = 204
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+}
+count_male_theo_cath_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+count_female_theo_cath_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+county_theo_cath_old_saxon = {
+	type = title
+	tier = county
+	priority = 213
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+}
+count_male_theo_cath_old_saxon_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+count_female_theo_cath_old_saxon_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+county_theo_cath_old_saxon_independent = {
+	type = title
+	tier = county
+	priority = 214
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_independent = yes
+}
+duke_male_theo_cath_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+duke_female_theo_cath_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+duchy_theo_cath_old_saxon = {
+	type = title
+	tier = duchy
+	priority = 223
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+}
+duke_male_theo_cath_old_saxon_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+duke_female_theo_cath_old_saxon_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+	only_independent = yes
+}
+duchy_theo_cath_old_saxon_independent = {
+	type = title
+	tier = duchy
+	priority = 224
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_independent = yes
+}
+king_theo_cath_old_saxon = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 243
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_theo_cath_old_saxon = {
+	type = title
+	tier = kingdom
+	priority = 243
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+}
+emperor_male_theo_cath_old_saxon = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+emperor_female_theo_cath_old_saxon = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
+	top_liege = no
+	only_holder = yes
+}
+empire_theo_cath_old_saxon = {
+	type = title
+	tier = empire
+	priority = 253
+	governments = { theocracy_government }
+	faiths = { catholic waldensian insular_celtic lollard }
+	cultures = { old_saxon }
 	top_liege = no
 }
 
