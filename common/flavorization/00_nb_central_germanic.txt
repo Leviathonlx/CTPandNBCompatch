@@ -1,4 +1,390 @@
-﻿###############################################
+###############################################
+## low frankish Culture (Old Dutch)
+
+baron_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+baron_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+count_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+count_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+count_male_low_frankish_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+count_female_low_frankish_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+duke_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duke_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duke_male_low_frankish_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+duke_female_low_frankish_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+king_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+king_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+emperor_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+emperor_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+barony_castle_low_frankish = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = castle_holding
+	cultures = { low_frankish }
+	top_liege = no
+}
+county_low_frankish = {
+	type = title
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+county_low_frankish_independent = {
+	type = title
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+duchy_low_frankish = {
+	type = title
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duchy_low_frankish_independent = {
+	type = title
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+	only_independent = yes
+}
+kingdom_low_frankish = {
+	type= title
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+empire_low_frankish = {
+	type = title
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+title_prince_male_low_frankish = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_low_frankish = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_empire_low_frankish = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_empire_low_frankish = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_low_frankish = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_low_frankish = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { low_frankish }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_republic_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+baron_republic_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+barony_city_low_frankish = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = city_holding
+	cultures = { low_frankish }
+	top_liege = no
+}
+count_republic_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+count_republic_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+county_republic_low_frankish = {
+	type = title
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duke_republic_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duke_republic_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+duchy_republic_low_frankish = {
+	type = title
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+king_republic_male_low_frankish = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+king_republic_female_low_frankish = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+kingdom_republic_low_frankish = {
+	type = title
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { low_frankish }
+	top_liege = no
+}
+barony_tribe_low_frankish = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	cultures = { low_frankish }
+	top_liege = no
+}
+
+###############################################
 ## walloon limburgisch vlaemsch dutch Culture (Middle walloon limburgisch vlaemsch dutch)
 
 baron_male_dutch = {
@@ -1414,5 +1800,399 @@ barony_tribe_saxon = {
 	priority = 103
 	holding = tribal_holding
 	cultures = { elbian saxon }
+	top_liege = no
+}
+
+##################################################
+## high frankish old alemannic old bavarian (Old High German)
+
+baron_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+baron_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+count_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+count_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+count_male_old_high_german_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+count_female_old_high_german_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+duke_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+duke_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+duke_male_old_high_german_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+duke_female_old_high_german_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+king_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+king_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+emperor_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+emperor_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+barony_castle_old_high_german = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = castle_holding
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+county_old_high_german = {
+	type = title
+	tier = county
+	priority = 113
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+county_old_high_german_independent = {
+	type = title
+	tier = county
+	priority = 114
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+duchy_old_high_german = {
+	type = title
+	tier = duchy
+	priority = 123
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+duchy_old_high_german_independent = {
+	type = title
+	tier = duchy
+	priority = 124
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_independent = yes
+}
+kingdom_old_high_german = {
+	type= title
+	tier = kingdom
+	priority = 143
+	governments = { feudal_government clan_government tribal_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+empire_old_high_german = {
+	type = title
+	tier = empire
+	priority = 153
+	governments = { feudal_government clan_government tribal_government republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+title_prince_male_old_high_german = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_female_old_high_german = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 130
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+title_prince_male_empire_old_high_german = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+title_prince_female_empire_old_high_german = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 150
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+queen_mother_old_high_german = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = kingdom
+	priority = 130
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government }
+	top_liege = no
+}
+empress_mother_old_high_german = {
+	type = character
+	gender = female
+	special = queen_mother
+	tier = empire
+	priority = 150
+	cultures = { high_frankish old_bavarian old_alemannic }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+baron_republic_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+baron_republic_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+barony_city_old_high_german = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = city_holding
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+count_republic_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+count_republic_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+county_republic_old_high_german = {
+	type = title
+	tier = county
+	priority = 113
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+duke_republic_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+duke_republic_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+duchy_republic_old_high_german = {
+	type = title
+	tier = duchy
+	priority = 123
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+king_republic_male_old_high_german = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+king_republic_female_old_high_german = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+	only_holder = yes
+}
+kingdom_republic_old_high_german = {
+	type = title
+	tier = kingdom
+	priority = 143
+	governments = { republic_government }
+	cultures = { high_frankish old_bavarian old_alemannic }
+	top_liege = no
+}
+barony_tribe_old_high_german = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	cultures = { high_frankish old_bavarian old_alemannic }
 	top_liege = no
 }
