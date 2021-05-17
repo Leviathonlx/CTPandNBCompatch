@@ -17,10 +17,10 @@
 ###################################
    councillor_chancellor_english: "Canceler"
    councillor_chancellor_anglo_saxon: "Héahwita"
-   councillor_hre_chancellor_old_saxon_male: "Ersikenselêri"
-   councillor_hre_chancellor_old_saxon_female: "Ersikenselêrinna"
-   councillor_chancellor_old_saxon_male: "Kenselêri"
-   councillor_chancellor_old_saxon_female: "Kenselêrinna"
+   councillor_hre_chancellor_male_old_saxon: "Ersikenselêri"
+   councillor_hre_chancellor_female_old_saxon: "Ersikenselêrin"
+   councillor_chancellor_male_old_saxon: "Kenselêri"
+   councillor_chancellor_female_old_saxon: "Kenselêrin"
    councillor_chancellor_scottish: "Chanceller"
 ###################################
   #Brythonic
@@ -69,30 +69,31 @@
 ###################################
   #Central Germanic
 ###################################
+   
    councillor_hre_chancellor_male_saxon: "Ersekenselære"
-   councillor_hre_chancellor_female_saxon: "Ersekenselærinne"
+   councillor_hre_chancellor_female_saxon: "Ersekenselærin"
    councillor_chancellor_male_saxon: "Kenselære"
-   councillor_chancellor_female_saxon: "Kenselærinne"
+   councillor_chancellor_female_saxon: "Kenselærin"
    
    councillor_hre_chancellor_male_mhg: "Erzekanzelære"
-   councillor_hre_chancellor_female_mhg: "Erzekanzelærinne"
+   councillor_hre_chancellor_female_mhg: "Erzekanzelærin"
    councillor_chancellor_male_mhg: "Kanzelære"
-   councillor_chancellor_female_mhg: "Kanzelærinne"
+   councillor_chancellor_female_mhg: "Kanzelærin"
    
    councillor_hre_chancellor_dutch: "Aertscancelier"
    councillor_chancellor_dutch: "Cancelier"
    
    councillor_chancellor_frisian: "Kenselere"
    
-   councillor_hre_chancellor_male_ohg: "Erzikanzilari"
-   councillor_hre_chancellor_female_ohg: "Erzilanzilarinna"
-   councillor_chancellor_male_ohg: "Kanzilari"
-   councillor_chancellor_female_ohg: "Kanzilarinna"
+   councillor_hre_chancellor_male_ohg: "Erzikanzilâri"
+   councillor_hre_chancellor_female_ohg: "Erzikanzilârin"
+   councillor_chancellor_male_ohg: "Kanzilâri"
+   councillor_chancellor_female_ohg: "Kanzilârin"
    
-   councillor_hre_chancellor_male_low_frankish: "Ersikansilari"
-   councillor_hre_chancellor_female_low_frankish: "Ersikansilarinna"
-   councillor_chancellor_male_low_frankish: "Kansilari"
-   councillor_chancellor_female_low_frankish: "Kansilarinna"
+   councillor_hre_chancellor_male_low_frankish: "Ersikansilâri"
+   councillor_hre_chancellor_female_low_frankish: "Ersikansilârin"
+   councillor_chancellor_male_low_frankish: "Kansilâri"
+   councillor_chancellor_female_low_frankish: "Kansilârin"
 ###################################
   #Arabic
 ###################################
@@ -233,10 +234,10 @@
 ################################### 
    councillor_steward_english: "Stiward"
    councillor_steward_anglo_saxon: "Feohgeréfa"
-   councillor_hre_steward_old_saxon_male: "Ersikamerâri"
-   councillor_hre_steward_old_saxon_female: "Ersikamerârinna"
-   councillor_steward_old_saxon_male: "Kamerâri"
-   councillor_steward_old_saxon_female: "Kamerârinna"
+   councillor_hre_steward_male_old_saxon: "Ersikamerâri"
+   councillor_hre_steward_female_old_saxon: "Ersikamerârin"
+   councillor_steward_male_old_saxon: "Kamerâri"
+   councillor_steward_female_old_saxon: "Kamerârin"
    councillor_steward_scottish: "Stewart"
 ################################### 
   #Brythonic
@@ -254,7 +255,7 @@
 ################################### 
   #Frankish
 ################################### 
-   councillor_steward_frankish: "Siniscalch"
+   councillor_steward_frankish: "Siniskalk"
    councillor_steward_french: "Seneschals"
    councillor_steward_norman_male: "Seneschals"
    councillor_steward_norman_female: "Seneschale"
@@ -289,14 +290,14 @@
   #Central Germanic
 ################################### 
    councillor_hre_steward_saxon_male: "Ersekêmerære"
-   councillor_hre_steward_saxon_female: "Ersekêmerærinne"
+   councillor_hre_steward_saxon_female: "Ersekêmerærin"
    councillor_steward_saxon_male: "Kêmerære"
-   councillor_steward_saxon_female: "Kêmerærinne"
+   councillor_steward_saxon_female: "Kêmerærin"
    
    councillor_hre_steward_mhg_male: "Erzekamerære"
-   councillor_hre_steward_mhg_female: "Erzekamerærinne"
+   councillor_hre_steward_mhg_female: "Erzekamerærin"
    councillor_steward_mhg_male: "Kamerære"
-   councillor_steward_mhg_female: "Kamerærinne"
+   councillor_steward_mhg_female: "Kamerærin"
    
    councillor_hre_steward_dutch: "Aertsrentemeester"
    councillor_steward_dutch: "Rentemeester"
@@ -304,14 +305,14 @@
    councillor_steward_frisian: "Drusta"
    
    councillor_hre_steward_ohg_male: "Erzichamarâri"
-   councillor_hre_steward_ohg_female: "Erzichamarârinna"
+   councillor_hre_steward_ohg_female: "Erzichamarârin"
    councillor_steward_ohg_male: "Chamarâri"
-   councillor_steward_ohg_female: "Chamarârinna"   
+   councillor_steward_ohg_female: "Chamarârin"
    
    councillor_hre_steward_low_frankish_male: "Ersikamarâri"
-   councillor_hre_steward_low_frankish_female: "Ersikamarârinna"
+   councillor_hre_steward_low_frankish_female: "Ersikamarârin"
    councillor_steward_low_frankish_male: "Kamarâri"
-   councillor_steward_low_frankish_female: "Kamarârinna"   
+   councillor_steward_low_frankish_female: "Kamarârin"
 ################################### 
   #Arabic
 ################################### 
@@ -450,10 +451,10 @@
 ################################### 
    councillor_marshal_english: "Marchal"
    councillor_marshal_anglo_saxon: "Steallere"
-   councillor_hre_marshal_old_saxon_male: "Ersimaraskalk"
-   councillor_hre_marshal_old_saxon_female: "Ersimaraskalkinna"
-   councillor_marshal_old_saxon_male: "Maraskalk"
-   councillor_marshal_old_saxon_female: "Maraskalkinna"
+   councillor_hre_marshal_male_old_saxon: "Ersimaraskalk"
+   councillor_hre_marshal_female_old_saxon: "Ersimaraskalkin"
+   councillor_marshal_male_old_saxon: "Maraskalk"
+   councillor_marshal_female_old_saxon: "Maraskalkin"
    councillor_marshal_scottish: "Marshal"
 ################################### 
   #Brythonic
@@ -468,7 +469,7 @@
 ################################### 
   #Frankish
 ################################### 
-   councillor_marshal_frankish: "Marhscalch"
+   councillor_marshal_frankish: "Marhskalk"
    councillor_marshal_french: "Conestables"
    councillor_marshal_norman: "Conestables"
    councillor_marshal_occitan: "Conestables"
@@ -500,14 +501,14 @@
   #Central Germanic
 ###################################
    councillor_hre_marshal_saxon_male: "Ersemarschalk"
-   councillor_hre_marshal_saxon_female: "Ersemarschalkinne"
+   councillor_hre_marshal_saxon_female: "Ersemarschalkin"
    councillor_marshal_saxon_male: "Marschalk"
-   councillor_marshal_saxon_female: "Marschalkinne"
+   councillor_marshal_saxon_female: "Marschalkin"
    
-   councillor_hre_marshal_mhg_male: "Erzemarcschalc"
-   councillor_hre_marshal_mhg_female: "Erzemarcschalcinne"
-   councillor_marshal_mhg_male: "Marcschalc"
-   councillor_marshal_mhg_female: "Marcschalcinne"
+   councillor_hre_marshal_mhg_male: "Erzemarschalc"
+   councillor_hre_marshal_mhg_female: "Erzemarschalcin"
+   councillor_marshal_mhg_male: "Marhscalc"
+   councillor_marshal_mhg_female: "Marschalcin"
 
    councillor_hre_marshal_dutch: "Aertsmarscalc"
    councillor_marshal_dutch: "Marscalc"
@@ -515,14 +516,14 @@
    councillor_marshal_frisian: "Marscalk"
    
    councillor_hre_marshal_ohg_male: "Erzimarahscalc"
-   councillor_hre_marshal_ohg_female: "Erzimarahscalcinna"
+   councillor_hre_marshal_ohg_female: "Erzimarahscalcin"
    councillor_marshal_ohg_male: "Marahscalc"
-   councillor_marshal_ohg_female: "Marahscalcinna"
+   councillor_marshal_ohg_female: "Marahscalcin"
    
-   councillor_hre_marshal_low_frankish_male: "Ersimarscalc"
-   councillor_hre_marshal_low_frankish_female: "Ersimarscalcinna"
-   councillor_marshal_low_frankish_male: "Marscalc"
-   councillor_marshal_low_frankish_female: "Marscalcinna"
+   councillor_hre_marshal_low_frankish_male: "Ersimarahskalk"
+   councillor_hre_marshal_low_frankish_female: "Ersimarahskalkin"
+   councillor_marshal_low_frankish_male: "Marahskalk"
+   councillor_marshal_low_frankish_female: "Marahskalkin"
 ###################################
   #Arabic 
 ###################################
@@ -662,8 +663,8 @@
    councillor_spymaster_english: "Chaumberlain"
    councillor_spymaster_anglo_saxon_male: "Búrþén"
    councillor_spymaster_anglo_saxon_female: "Búrþéarne"
-   councillor_hre_spymaster_old_saxon: "Ersikamarling"
-   councillor_spymaster_old_saxon: "Kamarling"
+   councillor_hre_spymaster_old_saxon: "Ersikamerling"
+   councillor_spymaster_old_saxon: "Kamerling"
    councillor_spymaster_scottish: "Chaumberlayn"
 ################################### 
   #Brythonic
@@ -728,8 +729,8 @@
    councillor_hre_spymaster_ohg: "Erzichamarling"
    councillor_spymaster_ohg: "Chamarling"
    
-   councillor_hre_spymaster_low_frankish: "Ersikamarlinc"
-   councillor_spymaster_low_frankish: "Kamarlinc"
+   councillor_hre_spymaster_low_frankish: "Ersikamarling"
+   councillor_spymaster_low_frankish: "Kamarling"
 ###################################
   #Arabic
 ###################################
