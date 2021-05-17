@@ -79,6 +79,21 @@ QueenMAngloSaxon = {
 		localization_key =  king_default_female_anglo_saxon
 	}
 }
+QueenMOldSaxon = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_old_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_old_saxon
+	}
+}
 QueenMScottish = {
 	type = character
 	text = {
@@ -553,6 +568,36 @@ QueenMDutch = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_dutch
+	}
+}
+QueenMOHG = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_old_high_german
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_old_high_german
+	}
+}
+QueenMLowFrankish = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_low_frankish
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_low_frankish
 	}
 }
 QueenMEstonian = {
@@ -2365,48 +2410,5 @@ QueenMTajik = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_tajik
-	}
-}
-QueenMLowFrankish = {
-	type = character
-	text = {
-		trigger = {
-			faith = {
-				has_doctrine = tenet_struggle_submission
-			}
-		}
-		localization_key = sultan_female_low_frankish
-	}
-	text = {
-		fallback = yes
-		localization_key =  king_default_female_low_frankish
-	}
-}
-QueenMHG = {
-	type = character
-	text = {
-		trigger = {
-			current_date < 1050.1.1
-		}
-		localization_key = queen_mother_old_high_german
-	}
-	text = {
-		fallback = yes
-		localization_key = queen_mother_middle_high_german
-	}
-}
-QueenMOHG = {
-	type = character
-	text = {
-		trigger = {
-			faith = {
-				has_doctrine = tenet_struggle_submission
-			}
-		}
-		localization_key = sultan_female_old_high_german
-	}
-	text = {
-		fallback = yes
-		localization_key =  king_default_female_old_high_german
 	}
 }

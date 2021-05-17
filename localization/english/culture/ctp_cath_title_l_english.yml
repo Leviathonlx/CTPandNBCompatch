@@ -125,56 +125,56 @@
   #Old Saxon
 ########################################################
    pope_man_old_saxon: "Pâwes"
-   pope_woman_old_saxon: "Pâwesinna"
-   grand_master_male_cath_mhg: "Hôhmêstar"
-   grand_master_female_cath_mhg: "Hôhmêistarinna"
+   pope_woman_old_saxon: "Pâwesin"
+   grand_master_male_cath_old_saxon: "Hôchmêstar"
+   grand_master_female_cath_old_saxon: "Hôchmêstarin"
    
-   barons_cc_male_cath_saxon: "Prêstar"
-   barons_cc_female_cath_saxon: "Prêstsrinna"
+   barons_cc_male_cath_old_saxon: "Prêstar"
+   barons_cc_female_cath_old_saxon: "Prêstarin"
    
-   baron_male_theo_cath_saxon: "Ersiprêstar"
-   baron_female_theo_cath_saxon: "Ersiprêstarinna"
-   barony_hold_cath_saxon: "Biskopdôm"
-   barony_theo_cath_saxon: "Dêkenât"
+   baron_male_theo_cath_old_saxon: "Ersiprêstar"
+   baron_female_theo_cath_old_saxon: "Ersiprêstarin"
+   barony_hold_cath_old_saxon: "Bisdôm"
+   barony_theo_cath_old_saxon: "Ðêkenât"
    
    count_male_theo_cath_old_saxon: "[CHARACTER.Custom('CountMaleCathOldSaxon')]"
    count_female_theo_cath_old_saxon: "[CHARACTER.Custom('CountFemaleCathOldSaxon')]"
    county_theo_cath_old_saxon: "[CHARACTER.Custom('CountyCathOldSaxon')]"
    count_default_male_cath_old_saxon: "Biskop"
-   count_default_female_cath_old_saxon: "Biskopinna"
+   count_default_female_cath_old_saxon: "Biskopin"
    county_default_cath_old_saxon: "Bisdôm"
    
-   kurfurst_count_male_cath_old_saxon: "Kurfurstbiskop"
-   kurfurst_count_female_cath_old_saxon: "Kurfurstbiskopinna"
-   kurfurstdom_county_cath_old_saxon: "Kurfurstbisdôm"
+   kurfurst_count_male_cath_old_saxon: "Kurbiskop" #Placeholder
+   kurfurst_count_female_cath_old_saxon: "Kurbiskopin" #Placeholder
+   kurfurstdom_county_cath_old_saxon: "Kurbisdôm" #Placeholder
    
-   count_male_theo_cath_old_saxon_independent: "Furstbiskop"
-   count_female_theo_cath_old_saxon_independent: "Furstbiskopinna"
+   count_male_theo_cath_old_saxon_independent: "Furistebiskop" #Placeholder
+   count_female_theo_cath_old_saxon_independent: "Furistebiskopin" #Placeholder
    county_theo_cath_old_saxon_independent: "[CHARACTER.Custom('IndepCountyCathOldSaxon')]"
-   independent_county_cath_old_saxon: "Furstbisdôm"
+   independent_county_cath_old_saxon: "Furistebisdôm" #Placeholder
    
    duke_male_theo_cath_old_saxon: "[CHARACTER.Custom('DukeMaleCathOldSaxon')]"
    duke_female_theo_cath_old_saxon: "[CHARACTER.Custom('DukeFemaleCathOldSaxon')]"
    duchy_theo_cath_old_saxon: "[CHARACTER.Custom('DuchyCathOldSaxon')]"
    duke_default_male_cath_old_saxon: "Ersibiskop"
-   duke_default_female_cath_old_saxon: "Ersibiskopinna"
+   duke_default_female_cath_old_saxon: "Ersibiskopin"
    duchy_default_cath_old_saxon: "Ersibisdôm"
    
-   kurfurst_duke_male_cath_old_saxon: "Kurfurstersibiskop"
-   kurfurst_duke_female_cath_old_saxon: "Kurfurstersibiskopin"
-   kurfurstdom_duchy_cath_old_saxon: "Kurfurstersibistoum"
+   kurfurst_duke_male_cath_old_saxon: "Kurersibiskop" #Placeholder
+   kurfurst_duke_female_cath_old_saxon: "Kurersibiskopin" #Placeholder
+   kurfurstdom_duchy_cath_old_saxon: "Kurersibisdôm" #Placeholder
    
-   duke_male_theo_cath_old_saxon_independent: "Furstersibiskop"
-   duke_female_theo_cath_old_saxon_independent: "Furstersibiskopinna"
+   duke_male_theo_cath_old_saxon_independent: "Furistersibiskop" #Placeholder
+   duke_female_theo_cath_old_saxon_independent: "Furistersibiskopin" #Placeholder
    duchy_theo_cath_old_saxon_independent: "[CHARACTER.Custom('IndepDuchyCathOldSaxon')]"
-   independent_duchy_cath_old_saxon: "Furstersibisdôm"   
+   independent_duchy_cath_old_saxon: "Furistersibisdôm" #Placeholder
    
-   king_theo_cath_saxon: "Prîmâs"
-   kingdom_theo_cath_saxon: "Prîmât"
+   king_theo_cath_old_saxon: "Prîmâs"
+   kingdom_theo_cath_old_saxon: "Prîmât"
    
-   emperor_male_theo_cath_saxon: "Patriarke"
-   emperor_female_theo_cath_saxon: "Patriarkinna"
-   empire_theo_cath_saxon: "Patriarkât"
+   emperor_male_theo_cath_old_saxon: "Patriarke"
+   emperor_female_theo_cath_old_saxon: "Patriarkin"
+   empire_theo_cath_old_saxon: "Patriarkât"
 ########################################################
   #Welsh
 ########################################################
@@ -539,15 +539,15 @@
   #Saxon
 ########################################################
    pope_man_saxon: "Pâwest"
-   pope_woman_saxon: "Pâwestinne"
+   pope_woman_saxon: "Pâwestin"
    grand_master_male_cath_saxon: "Hôchmêster"
-   grand_master_female_cath_saxon: "Hôchmêsterinne"
+   grand_master_female_cath_saxon: "Hôchmêsterin"
    
    barons_cc_male_cath_saxon: "Prêster"
-   barons_cc_female_cath_saxon: "Prêsterinne"
+   barons_cc_female_cath_saxon: "Prêsterin"
    
    baron_male_theo_cath_saxon: "Erseprêster"
-   baron_female_theo_cath_saxon: "Erseprêsterinne"
+   baron_female_theo_cath_saxon: "Erseprêsterin"
    barony_hold_cath_saxon: "Bischopdôm"
    barony_theo_cath_saxon: "Dêkenât"
    
@@ -555,15 +555,15 @@
    count_female_theo_cath_saxon: "[CHARACTER.Custom('CountFemaleCathSaxon')]"
    county_theo_cath_saxon: "[CHARACTER.Custom('CountyCathSaxon')]"
    count_default_male_cath_saxon: "Bischop"
-   count_default_female_cath_saxon: "Bischôpinne"
+   count_default_female_cath_saxon: "Bischôpin"
    county_default_cath_saxon: "Bischopdôm"
    
    kurfurst_count_male_cath_saxon: "Kôrbischop" #Placeholder
-   kurfurst_count_female_cath_saxon: "Kôrbischôpinne" #Placeholder
+   kurfurst_count_female_cath_saxon: "Kôrbischôpin" #Placeholder
    kurfurstdom_county_cath_saxon: "Kôrbischopdôm" #Placeholder
    
    count_male_theo_cath_saxon_independent: "Vorstebischop" #Placeholder
-   count_female_theo_cath_saxon_independent: "Vorstebischôpinne" #Placeholder
+   count_female_theo_cath_saxon_independent: "Vorstebischôpin" #Placeholder
    county_theo_cath_saxon_independent: "[CHARACTER.Custom('IndepCountyCathSaxon')]"
    independent_county_cath_saxon: "Vorstebischopdôm" #Placeholder
    
@@ -571,15 +571,15 @@
    duke_female_theo_cath_saxon: "[CHARACTER.Custom('DukeFemaleCathSaxon')]"
    duchy_theo_cath_saxon: "[CHARACTER.Custom('DuchyCathSaxon')]"
    duke_default_male_cath_saxon: "Ersebischop"
-   duke_default_female_cath_saxon: "Ersebischôpinne"
+   duke_default_female_cath_saxon: "Ersebischôpin"
    duchy_default_cath_saxon: "Ersebischopdôm"
    
    kurfurst_duke_male_cath_saxon: "Kôrersebischop" #Placeholder
-   kurfurst_duke_female_cath_saxon: "Kôrersebischôpinne" #Placeholder
+   kurfurst_duke_female_cath_saxon: "Kôrersebischôpin" #Placeholder
    kurfurstdom_duchy_cath_saxon: "Kôrersebischopdôm" #Placeholder
    
    duke_male_theo_cath_saxon_independent: "Vorstersebischop" #Placeholder
-   duke_female_theo_cath_saxon_independent: "Vorstersebischôpinne" #Placeholder
+   duke_female_theo_cath_saxon_independent: "Vorstersebischôpin" #Placeholder
    duchy_theo_cath_saxon_independent: "[CHARACTER.Custom('IndepDuchyCathSaxon')]"
    independent_duchy_cath_saxon: "Vorstersebischopdôm" #Placeholder
    
@@ -587,21 +587,21 @@
    kingdom_theo_cath_saxon: "Prîmât"
    
    emperor_male_theo_cath_saxon: "Patriarche"
-   emperor_female_theo_cath_saxon: "Patriarchinne"
+   emperor_female_theo_cath_saxon: "Patriarchin"
    empire_theo_cath_saxon: "Patriarchât"
 ########################################################
   #MHG
 ########################################################
    pope_man_mhg: "Bâbest"
-   pope_woman_mhg: "Bâbestinne"
+   pope_woman_mhg: "Bâbestin"
    grand_master_male_cath_mhg: "Hôchmeister"
-   grand_master_female_cath_mhg: "Hôchmeisterinne"
+   grand_master_female_cath_mhg: "Hôchmeisterin"
    
    barons_cc_male_cath_mhg: "Priester"
-   barons_cc_female_cath_mhg: "Priesterinne"
+   barons_cc_female_cath_mhg: "Priesterin"
    
    baron_male_theo_cath_mhg: "Erzepriester"
-   baron_female_theo_cath_mhg: "Erzepriesterinne"
+   baron_female_theo_cath_mhg: "Erzepriesterin"
    barony_hold_cath_mhg: "Bistuom"
    barony_theo_cath_mhg: "Techeine"
    
@@ -609,15 +609,15 @@
    count_female_theo_cath_mhg: "[CHARACTER.Custom('CountFemaleCathMHG')]"
    county_theo_cath_mhg: "[CHARACTER.Custom('CountyCathMHG')]"
    count_default_male_cath_mhg: "Bischof"
-   count_default_female_cath_mhg: "Bischofinne"
+   count_default_female_cath_mhg: "Bischofin"
    county_default_cath_mhg: "Bistuom"
    
    kurfurst_count_male_cath_mhg: "Kurbischof" #Placeholder
-   kurfurst_count_female_cath_mhg: "Kurbischofinne" #Placeholder
+   kurfurst_count_female_cath_mhg: "Kurbischofin" #Placeholder
    kurfurstdom_county_cath_mhg: "Kurbistuom" #Placeholder
    
    count_male_theo_cath_mhg_independent: "Vürstebischof" #Placeholder
-   count_female_theo_cath_mhg_independent: "Vürstebischofinne" #Placeholder
+   count_female_theo_cath_mhg_independent: "Vürstebischofin" #Placeholder
    county_theo_cath_mhg_independent: "[CHARACTER.Custom('IndepCountyCathMHG')]"
    independent_county_cath_mhg: "Vürstebistuom" #Placeholder
    
@@ -625,15 +625,15 @@
    duke_female_theo_cath_mhg: "[CHARACTER.Custom('DukeFemaleCathMHG')]"
    duchy_theo_cath_mhg: "[CHARACTER.Custom('DuchyCathMHG')]"
    duke_default_male_cath_mhg: "Erzebischof"
-   duke_default_female_cath_mhg: "Erzebischofinne"
+   duke_default_female_cath_mhg: "Erzebischofin"
    duchy_default_cath_mhg: "Erzebistuom"
    
    kurfurst_duke_male_cath_mhg: "Kurerzebischof" #Placeholder
-   kurfurst_duke_female_cath_mhg: "Kurerzebischofinne" #Placeholder
+   kurfurst_duke_female_cath_mhg: "Kurerzebischofin" #Placeholder
    kurfurstdom_duchy_cath_mhg: "Kurerzebistuom" #Placeholder
    
    duke_male_theo_cath_mhg_independent: "Vürsterzebischof" #Placeholder
-   duke_female_theo_cath_mhg_independent: "Vürsterzebischofinne" #Placeholder
+   duke_female_theo_cath_mhg_independent: "Vürsterzebischofin" #Placeholder
    duchy_theo_cath_mhg_independent: "[CHARACTER.Custom('IndepDuchyCathMHG')]"
    independent_duchy_cath_mhg: "Vürsterzebistuom" #Placeholder
    
@@ -641,13 +641,13 @@
    kingdom_theo_cath_mhg: "Prîmât"
    
    emperor_male_theo_cath_mhg: "Patriarche"
-   emperor_female_theo_cath_mhg: "Patriarchinne"
+   emperor_female_theo_cath_mhg: "Patriarchin"
    empire_theo_cath_mhg: "Patriarchât"
 ########################################################
   #Dutch
 ########################################################
    pope_dutch: "Pâus"
-   grand_master_cath_dutch: "Hôochmêester"
+   grand_master_cath_dutch: "Grootmeester"
    
    barons_cc_male_cath_dutch: "Dîaken"
    
@@ -684,6 +684,114 @@
    
    emperor_theo_cath_dutch: "Patriarke"
    empire_theo_cath_dutch: "Patriarkaat"
+########################################################
+  #OHG
+########################################################
+   pope_man_ohg: "Bâbes"
+   pope_woman_ohg: "Bâbesin"
+   grand_master_male_cath_ohg: "Hôhmeistar"
+   grand_master_female_cath_ohg: "Hôhmeistarin"
+   
+   barons_cc_male_cath_ohg: "Prêstar"
+   barons_cc_female_cath_ohg: "Prêstarin"
+   
+   baron_male_theo_cath_ohg: "Erziprêstar"
+   baron_female_theo_cath_ohg: "Erziprêstarin"
+   barony_hold_cath_ohg: "Bistuom"
+   barony_theo_cath_ohg: "Techeino"
+   
+   count_male_theo_cath_ohg: "[CHARACTER.Custom('CountMaleCathOHG')]"
+   count_female_theo_cath_ohg: "[CHARACTER.Custom('CountFemaleCathOHG')]"
+   county_theo_cath_ohg: "[CHARACTER.Custom('CountyCathOHG')]"
+   count_default_male_cath_ohg: "Biscof"
+   count_default_female_cath_ohg: "Biscofin"
+   county_default_cath_ohg: "Bistuom"
+   
+   kurfurst_count_male_cath_ohg: "Churbiscof" #Placeholder
+   kurfurst_count_female_cath_ohg: "Churbiscofin" #Placeholder
+   kurfurstdom_county_cath_ohg: "Churbistuom" #Placeholder
+   
+   count_male_theo_cath_ohg_independent: "Furistebiscof" #Placeholder
+   count_female_theo_cath_ohg_independent: "Furistebiscofin" #Placeholder
+   county_theo_cath_ohg_independent: "[CHARACTER.Custom('IndepCountyCathOHG')]"
+   independent_county_cath_ohg: "Furistebistuom" #Placeholder
+   
+   duke_male_theo_cath_ohg: "[CHARACTER.Custom('DukeMaleCathOHG')]"
+   duke_female_theo_cath_ohg: "[CHARACTER.Custom('DukeFemaleCathOHG')]"
+   duchy_theo_cath_ohg: "[CHARACTER.Custom('DuchyCathOHG')]"
+   duke_default_male_cath_ohg: "Erzibiscof"
+   duke_default_female_cath_ohg: "Erzibiscofin"
+   duchy_default_cath_ohg: "Erzibistuom"
+   
+   kurfurst_duke_male_cath_ohg: "Churerzibiscof" #Placeholder
+   kurfurst_duke_female_cath_ohg: "Churerzibiscofin" #Placeholder
+   kurfurstdom_duchy_cath_ohg: "Churerzibistuom" #Placeholder
+   
+   duke_male_theo_cath_ohg_independent: "Furisterzibiscof" #Placeholder
+   duke_female_theo_cath_ohg_independent: "Furisterzibiscofin" #Placeholder
+   duchy_theo_cath_ohg_independent: "[CHARACTER.Custom('IndepDuchyCathOHG')]"
+   independent_duchy_cath_ohg: "Furisterzibistuom" #Placeholder
+   
+   king_theo_cath_ohg: "Prîmâs"
+   kingdom_theo_cath_ohg: "Prîmât"
+   
+   emperor_male_theo_cath_ohg: "Patriarche"
+   emperor_female_theo_cath_ohg: "Patriarchin"
+   empire_theo_cath_ohg: "Patriarchât"
+########################################################
+  #Low Frankish ( Old Dutch )
+########################################################
+   pope_man_low_frankish: "Bâbes"
+   pope_woman_low_frankish: "Bâbesin"
+   grand_master_male_cath_low_frankish: "Hômêster"
+   grand_master_female_cath_low_frankish: "Hômêsterin"
+   
+   barons_cc_male_cath_low_frankish: "Prêstar"
+   barons_cc_female_cath_low_frankish: "Prêstarin"
+   
+   baron_male_theo_cath_low_frankish: "Ersiprêstar"
+   baron_female_theo_cath_low_frankish: "Ersiprêstarin"
+   barony_hold_cath_low_frankish: "Bisduom"
+   barony_theo_cath_low_frankish: "Dekeino"
+   
+   count_male_theo_cath_low_frankish: "[CHARACTER.Custom('CountMaleCathLowFrankish')]"
+   count_female_theo_cath_low_frankish: "[CHARACTER.Custom('CountFemaleCathLowFrankish')]"
+   county_theo_cath_low_frankish: "[CHARACTER.Custom('CountyCathLowFrankish')]"
+   count_default_male_cath_low_frankish: "Biskop"
+   count_default_female_cath_low_frankish: "Biskopin"
+   county_default_cath_low_frankish: "Bisduom"
+   
+   kurfurst_count_male_cath_low_frankish: "Kurbiskop" #Placeholder
+   kurfurst_count_female_cath_low_frankish: "Kurbiskopin" #Placeholder
+   kurfurstdom_county_cath_low_frankish: "Kurbisduom" #Placeholder
+   
+   count_male_theo_cath_low_frankish_independent: "Furistebiskop" #Placeholder
+   count_female_theo_cath_low_frankish_independent: "Furistebiskopin" #Placeholder
+   county_theo_cath_low_frankish_independent: "[CHARACTER.Custom('IndepCountyCathLowFrankish')]"
+   independent_county_cath_low_frankish: "Furistebisduom" #Placeholder
+   
+   duke_male_theo_cath_low_frankish: "[CHARACTER.Custom('DukeMaleCathLowFrankish')]"
+   duke_female_theo_cath_low_frankish: "[CHARACTER.Custom('DukeFemaleCathLowFrankish')]"
+   duchy_theo_cath_low_frankish: "[CHARACTER.Custom('DuchyCathLowFrankish')]"
+   duke_default_male_cath_low_frankish: "Ersibiskop"
+   duke_default_female_cath_low_frankish: "Ersibiskopin"
+   duchy_default_cath_low_frankish: "Ersibisduom"
+   
+   kurfurst_duke_male_cath_low_frankish: "Kurersibiskop" #Placeholder
+   kurfurst_duke_female_cath_low_frankish: "Kurersibiskopin" #Placeholder
+   kurfurstdom_duchy_cath_low_frankish: "Kurersibisduom" #Placeholder
+   
+   duke_male_theo_cath_low_frankish_independent: "Furistersibiskop" #Placeholder
+   duke_female_theo_cath_low_frankish_independent: "Furistersibiskopin" #Placeholder
+   duchy_theo_cath_low_frankish_independent: "[CHARACTER.Custom('IndepDuchyCathLowFrankish')]"
+   independent_duchy_cath_low_frankish: "Furistersibisduom" #Placeholder
+   
+   king_theo_cath_low_frankish: "Prîmâs"
+   kingdom_theo_cath_low_frankish: "Prîmât"
+   
+   emperor_male_theo_cath_low_frankish: "Patriarke"
+   emperor_female_theo_cath_low_frankish: "Patriarkin"
+   empire_theo_cath_low_frankish: "Patriarkât"
 ########################################################
  #Arabic
 ########################################################
@@ -841,111 +949,3 @@
    
    duke_male_theo_cath_russian: "Arkhijepiskop"
    duchy_theo_cath_russian: "Arkhijeparkhiya"
-########################################################
-  #OHG
-########################################################
-   pope_man_ohg: "Bâbes"
-   pope_woman_ohg: "Bâbesinna"
-   grand_master_male_cath_ohg: "Hôhmeistar"
-   grand_master_female_cath_ohg: "Hôhmeistarinna"
-   
-   barons_cc_male_cath_ohg: "Prestâr"
-   barons_cc_female_cath_ohg: "Prestârinna"
-   
-   baron_male_theo_cath_ohg: "Erziprestâr"
-   baron_female_theo_cath_ohg: "Erziprestârinna"
-   barony_hold_cath_ohg: "Bistuom"
-   barony_theo_cath_ohg: "Techeine"
-   
-   count_male_theo_cath_ohg: "[CHARACTER.Custom('CountMaleCathOHG')]"
-   count_female_theo_cath_ohg: "[CHARACTER.Custom('CountFemaleCathOHG')]"
-   county_theo_cath_ohg: "[CHARACTER.Custom('CountyCathOHG')]"
-   count_default_male_cath_ohg: "Biskop"
-   count_default_female_cath_ohg: "Biskopinna"
-   county_default_cath_ohg: "Bistuom"
-   
-   kurfurst_count_male_cath_ohg: "Kurbiskop" #Placeholder
-   kurfurst_count_female_cath_ohg: "Kurbiskopinna" #Placeholder
-   kurfurstdom_county_cath_ohg: "Kurbistuom" #Placeholder
-   
-   count_male_theo_cath_ohg_independent: "Furistobiskop" #Placeholder
-   count_female_theo_cath_ohg_independent: "Furistobiskopinna" #Placeholder
-   county_theo_cath_ohg_independent: "[CHARACTER.Custom('IndepCountyCathOHG')]"
-   independent_county_cath_ohg: "Furistobistuom" #Placeholder
-   
-   duke_male_theo_cath_ohg: "[CHARACTER.Custom('DukeMaleCathOHG')]"
-   duke_female_theo_cath_ohg: "[CHARACTER.Custom('DukeFemaleCathOHG')]"
-   duchy_theo_cath_ohg: "[CHARACTER.Custom('DuchyCathOHG')]"
-   duke_default_male_cath_ohg: "Erzibiskop"
-   duke_default_female_cath_ohg: "Erzibiskopinna"
-   duchy_default_cath_ohg: "Erzibistuom"
-   
-   kurfurst_duke_male_cath_ohg: "Kurerzibiskop" #Placeholder
-   kurfurst_duke_female_cath_ohg: "Kurerzibiskopinna" #Placeholder
-   kurfurstdom_duchy_cath_ohg: "Kurerzibistuom" #Placeholder
-   
-   duke_male_theo_cath_ohg_independent: "Furisterzibiskop" #Placeholder
-   duke_female_theo_cath_ohg_independent: "Furisterzibiskopinna" #Placeholder
-   duchy_theo_cath_ohg_independent: "[CHARACTER.Custom('IndepDuchyCathOHG')]"
-   independent_duchy_cath_ohg: "Furisterzibistuom" #Placeholder
-   
-   king_theo_cath_ohg: "Prîmâs"
-   kingdom_theo_cath_ohg: "Prîmât"
-   
-   emperor_male_theo_cath_ohg: "Patriarche"
-   emperor_female_theo_cath_ohg: "Patriarchinna"
-   empire_theo_cath_ohg: "Patriarchât"
-########################################################
-  #Low Frankish
-########################################################
-   pope_man_low_frankish: "Bâbes"
-   pope_woman_low_frankish: "Bâbesinna"
-   grand_master_male_cath_low_frankish: "Hômêster"
-   grand_master_female_cath_low_frankish: "Hômêsterinna"
-   
-   barons_cc_male_cath_low_frankish: "Prestâr"
-   barons_cc_female_cath_low_frankish: "Prestârinna"
-   
-   baron_male_theo_cath_low_frankish: "Ersiprestâr"
-   baron_female_theo_cath_low_frankish: "Ersiprestârinna"
-   barony_hold_cath_low_frankish: "Bisduom"
-   barony_theo_cath_low_frankish: "Tekeine"
-   
-   count_male_theo_cath_low_frankish: "[CHARACTER.Custom('CountMaleCathLowFrankish')]"
-   count_female_theo_cath_low_frankish: "[CHARACTER.Custom('CountFemaleCathLowFrankish')]"
-   county_theo_cath_low_frankish: "[CHARACTER.Custom('CountyCathLowFrankish')]"
-   count_default_male_cath_low_frankish: "Biskop"
-   count_default_female_cath_low_frankish: "Biskopin"
-   county_default_cath_low_frankish: "Bisduom"
-   
-   kurfurst_count_male_cath_low_frankish: "Kurbiskop" #Placeholder
-   kurfurst_count_female_cath_low_frankish: "Kurbiskopinna" #Placeholder
-   kurfurstdom_county_cath_low_frankish: "Kurbisduom" #Placeholder
-   
-   count_male_theo_cath_low_frankish_independent: "Furistabiskop" #Placeholder
-   count_female_theo_cath_low_frankish_independent: "Furistabiskopinna" #Placeholder
-   county_theo_cath_low_frankish_independent: "[CHARACTER.Custom('IndepCountyCathLowFrankish')]"
-   independent_county_cath_low_frankish: "Furistabisduom" #Placeholder
-   
-   duke_male_theo_cath_low_frankish: "[CHARACTER.Custom('DukeMaleCathLowFrankish')]"
-   duke_female_theo_cath_low_frankish: "[CHARACTER.Custom('DukeFemaleCathLowFrankish')]"
-   duchy_theo_cath_low_frankish: "[CHARACTER.Custom('DuchyCathLowFrankish')]"
-   duke_default_male_cath_low_frankish: "Ersibiskop"
-   duke_default_female_cath_low_frankish: "Ersibiskopinna"
-   duchy_default_cath_low_frankish: "Ersibisduom"
-   
-   kurfurst_duke_male_cath_low_frankish: "Kurersibiskop" #Placeholder
-   kurfurst_duke_female_cath_low_frankish: "Kurersibiskopin" #Placeholder
-   kurfurstdom_duchy_cath_low_frankish: "Kurersibisduom" #Placeholder
-   
-   duke_male_theo_cath_low_frankish_independent: "Furistersibiskop" #Placeholder
-   duke_female_theo_cath_low_frankish_independent: "Furistersibiskopin" #Placeholder
-   duchy_theo_cath_low_frankish_independent: "[CHARACTER.Custom('IndepDuchyCathLowFrankish')]"
-   independent_duchy_cath_low_frankish: "Furistersibisduom" #Placeholder
-   
-   king_theo_cath_low_frankish: "Prîmâs"
-   kingdom_theo_cath_low_frankish: "Prîmât"
-   
-   emperor_male_theo_cath_low_frankish: "Patriarke"
-   emperor_female_theo_cath_low_frankish: "Patriarkinna"
-   empire_theo_cath_low_frankish: "Patriarkât"
