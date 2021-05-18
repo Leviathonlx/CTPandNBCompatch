@@ -1,5 +1,4 @@
-﻿
-###############################################
+﻿###############################################
 ## French_culture
 
 baron_male_french = {
@@ -8,7 +7,7 @@ baron_male_french = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -18,7 +17,7 @@ baron_female_french = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -26,7 +25,7 @@ barony_castle_french = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	holding = castle_holding
 	top_liege = no
 }
@@ -36,7 +35,7 @@ count_male_french = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -46,7 +45,7 @@ count_female_french = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -54,7 +53,7 @@ county_french = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -64,7 +63,7 @@ duke_male_french = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -74,7 +73,7 @@ duke_female_french = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -82,7 +81,7 @@ duchy_french = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -92,7 +91,7 @@ duke_male_french_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
 	top_liege = no
@@ -103,7 +102,7 @@ duke_female_french_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
 	top_liege = no
@@ -112,7 +111,7 @@ duchy_french_independent = {
 	type = title
 	priority = 124
 	tier = duchy
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
 	top_liege = no
@@ -123,7 +122,7 @@ king_male_french = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -133,7 +132,7 @@ king_female_french = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -141,7 +140,7 @@ kingdom_french = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -151,7 +150,7 @@ emperor_male_french = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -161,7 +160,7 @@ emperor_female_french = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -169,7 +168,7 @@ empire_french = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -179,7 +178,7 @@ title_prince_male_french = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -189,7 +188,7 @@ title_prince_female_french = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -199,7 +198,7 @@ title_prince_male_french_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -209,7 +208,7 @@ title_prince_female_french_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -219,7 +218,7 @@ queen_mother_french = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -229,7 +228,7 @@ empress_mother_french = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -239,7 +238,7 @@ baron_republic_male_french = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -250,7 +249,7 @@ baron_republic_female_french = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -259,7 +258,7 @@ barony_city_french = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	holding = city_holding
 	top_liege = no
 }
@@ -268,7 +267,7 @@ count_republic_french = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -277,7 +276,7 @@ county_republic_french = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -286,7 +285,7 @@ duke_republic_french = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -295,7 +294,7 @@ duchy_republic_french = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -304,7 +303,7 @@ king_republic_french = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 	only_holder = yes
@@ -313,7 +312,7 @@ kingdom_republic_french = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	governments = { republic_government }
 	top_liege = no
 }
@@ -321,7 +320,7 @@ barony_tribe_french = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { lorrain picard bourguignon angevin poitevin french }
+	cultures = { walloon arpitan lorrain picard bourguignon angevin poitevin french frankish }
 	holding = tribal_holding
 	top_liege = no
 }
