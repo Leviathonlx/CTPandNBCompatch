@@ -1,4 +1,4 @@
-councillor_chancellor = {
+﻿councillor_chancellor = {
 	skill = diplomacy
 	
 	name = councillor_chancellor_ctp

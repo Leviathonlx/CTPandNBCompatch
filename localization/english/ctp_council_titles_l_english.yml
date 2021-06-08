@@ -125,7 +125,10 @@
    councillor_chancellor_cisalpine_male: "Cancellero"
    councillor_chancellor_cisalpine_female: "Cancellera"
    councillor_chancellor_sardinian: "Cancelleri"
-   councillor_chancellor_lombard: "Referendariu"
+   councillor_chancellor_sicilian_male: "Canchilleri"
+   councillor_chancellor_sicilian_female: "Canchillera"
+   councillor_chancellor_lombard_male: "Referendariu"
+   councillor_chancellor_lombard_female: "Referendaria"                        
 ###################################
   #Southern Slavic
 ###################################
@@ -455,7 +458,7 @@
    councillor_hre_marshal_female_old_saxon: "Ersimaraskalkin"
    councillor_marshal_male_old_saxon: "Maraskalk"
    councillor_marshal_female_old_saxon: "Maraskalkin"
-   councillor_marshal_scottish: "Marshal"
+   councillor_marshal_scottish: "Constabill"
 ################################### 
   #Brythonic
 ################################### 
