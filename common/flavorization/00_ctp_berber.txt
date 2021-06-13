@@ -1,5 +1,11 @@
-﻿###############################################
-## butr tuareg zaghawa zaghawa_culture ##
+﻿#############################################
+##         Community Title Project         ##
+##          Title Flavourisation           ##
+#############################################
+###############################################
+## Berver_culture_group ##
+###############################################
+## butr zaghawa_culture ##
 ##
 baron_male_butr = {
 	type = character
@@ -7,7 +13,7 @@ baron_male_butr = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -17,7 +23,7 @@ baron_female_butr = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -25,7 +31,7 @@ barony_castle_butr = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	holding = castle_holding
 	top_liege = no
 }
@@ -35,7 +41,7 @@ count_male_butr = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -45,7 +51,7 @@ count_female_butr = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -53,7 +59,7 @@ county_butr = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -63,7 +69,7 @@ duke_male_butr = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -73,7 +79,7 @@ duke_female_butr = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -81,7 +87,7 @@ duchy_butr = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -91,7 +97,7 @@ duke_male_butr_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -102,7 +108,7 @@ duke_female_butr_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -111,7 +117,7 @@ duchy_butr_independent = {
 	type = title
 	tier = duchy
 	priority = 124
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -122,7 +128,7 @@ king_male_butr = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -132,7 +138,7 @@ king_female_butr = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -140,7 +146,7 @@ kingdom_butr = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -150,7 +156,7 @@ emperor_male_butr = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -160,7 +166,7 @@ emperor_female_butr = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -168,7 +174,7 @@ empire_butr = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -178,7 +184,7 @@ title_prince_male_butr = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -188,7 +194,7 @@ queen_mother_butr = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -198,7 +204,7 @@ empress_mother_butr = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	governments = { republic_government feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -207,7 +213,7 @@ baron_republic_butr = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { butr tuareg zaghawa  } 
+	cultures = { butr zaghawa tagelmust tuareg } 
 	governments = { republic_government }
 	only_holder = yes
 	top_liege = no
@@ -216,7 +222,7 @@ barony_city_butr = {
 	type = title
 	tier = barony
 	priority = 153
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	holding = city_holding
 	top_liege = no
 }
@@ -224,13 +230,12 @@ barony_tribe_butr = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { butr tuareg zaghawa  }
+	cultures = { butr zaghawa tagelmust tuareg }
 	holding = tribal_holding
 	top_liege = no
 }
-
 ###############################################
-## guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese culture ##
+## Baranis culture ##
 ##
 baron_male_baranis = {
 	type = character
@@ -238,7 +243,7 @@ baron_male_baranis = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -248,7 +253,7 @@ baron_female_baranis = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -256,7 +261,7 @@ barony_castle_baranis = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	holding = castle_holding
 	top_liege = no
 }
@@ -266,7 +271,7 @@ count_male_baranis = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -276,7 +281,7 @@ count_female_baranis = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -284,7 +289,7 @@ county_baranis = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -294,7 +299,7 @@ duke_male_baranis = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -304,7 +309,7 @@ duke_female_baranis = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -312,7 +317,7 @@ duchy_baranis = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -322,7 +327,7 @@ duke_male_baranis_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -333,7 +338,7 @@ duke_female_baranis_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -342,7 +347,7 @@ duchy_baranis_independent = {
 	type = title
 	tier = duchy
 	priority = 124
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 	only_independent = yes
@@ -353,7 +358,7 @@ king_male_baranis = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -363,7 +368,7 @@ king_female_baranis = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -371,7 +376,7 @@ kingdom_baranis = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -381,7 +386,7 @@ emperor_male_baranis = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -391,7 +396,7 @@ emperor_female_baranis = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -399,7 +404,7 @@ empire_baranis = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
@@ -409,7 +414,7 @@ title_prince_male_baranis = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -419,7 +424,7 @@ queen_mother_baranis ={
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	governments = { feudal_government clan_government tribal_government }
 	top_liege = no
 }
@@ -428,7 +433,7 @@ baron_republic_baranis = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese } 
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight } 
 	governments = { republic_government }
 	only_holder = yes
 	top_liege = no
@@ -437,7 +442,7 @@ barony_city_baranis = {
 	type = title
 	tier = barony
 	priority = 153
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	holding = city_holding
 	top_liege = no
 }
@@ -445,7 +450,7 @@ barony_tribe_baranis = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { guanche baranis tarafit tamazight masmuda sanhaja tagelmust sicilian_arabic maltese }
+	cultures = { baranis masmuda sanhaja tarafit guanche tamazight }
 	holding = tribal_holding
 	top_liege = no
 }

@@ -22,6 +22,7 @@ IndepCountMaleGoid = {
 	text = {
 		trigger = {
 			has_culture = culture:irish
+			has_culture = culture:norseirish
 		}
 		localization_key = count_default_male_irish
 	}
@@ -54,6 +55,7 @@ IndepCountFemaleGoid = {
 	text = {
 		trigger = {
 			has_culture = culture:irish
+			has_culture = culture:norseirish
 		}
 		localization_key = count_default_female_irish
 	}
@@ -67,6 +69,7 @@ IndepCountyGoid = {
 	text = {
 		trigger = {
 			has_culture = culture:irish
+			has_culture = culture:norseirish
 		}
 		localization_key = county_default_irish
 	}
@@ -225,6 +228,7 @@ NorthIndepCounty = {
 			OR = {
 				has_culture = culture:norse
 				has_culture = culture:norwegian
+				has_culture = culture:icelandic
 			}
 		}
 		localization_key = county_default_norse_norwegian
@@ -242,6 +246,9 @@ SwedishIndepCounty = {
 			OR = {
 				has_culture = culture:swedish
 				has_culture = culture:danish
+				has_culture = culture:crimean_gothic
+				has_culture = culture:gothic
+				has_culture = culture:gutnish
 			}
 		}
 		localization_key = county_default_swedish_danish
@@ -353,32 +360,6 @@ DutchIndepCounty = {
 	text = {
 		fallback = yes
 		localization_key = independent_county_dutch
-	}
-}
-OldHighGermanIndepCounty = {
-	type = character
-	text = {
-		trigger = {
-			highest_held_title_tier >= tier_duchy
-		}
-		localization_key = county_default_old_high_german
-	}
-	text = {
-		fallback = yes
-		localization_key = independent_county_old_high_german
-	}
-}
-LowFrankishIndepCounty = {
-	type = character
-	text = {
-		trigger = {
-			highest_held_title_tier >= tier_duchy
-		}
-		localization_key = county_default_low_frankish
-	}
-	text = {
-		fallback = yes
-		localization_key = independent_county_low_frankish
 	}
 }
 GeorgianIndepCounty = {

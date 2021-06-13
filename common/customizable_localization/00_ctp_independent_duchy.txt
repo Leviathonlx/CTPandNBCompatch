@@ -54,6 +54,7 @@ IndepDukeFemaleGoid = {
 	text = {
 		trigger = {
 			has_culture = culture:irish
+			has_culture = culture:norseirish
 		}
 		localization_key = duke_default_female_irish
 	}
@@ -67,6 +68,7 @@ GoidIndepDuchy = {
 	text = {
 		trigger = {
 			has_culture = culture:irish
+			has_culture = culture:norseirish
 		}
 		localization_key = duchy_default_irish
 	}
@@ -485,32 +487,6 @@ DutchIndepDuchy = {
 	text = {
 		fallback = yes
 		localization_key = independent_duchy_dutch
-	}
-}
-OldHighGermanIndepDuchy = {
-	type = character
-	text = {
-		trigger = {
-			highest_held_title_tier >= tier_kingdom
-		}
-		localization_key = duchy_default_old_high_german
-	}
-	text = {
-		fallback = yes
-		localization_key = independent_duchy_old_high_german
-	}
-}
-LowFrankishIndepDuchy = {
-	type = character
-	text = {
-		trigger = {
-			highest_held_title_tier >= tier_kingdom
-		}
-		localization_key = duchy_default_low_frankish
-	}
-	text = {
-		fallback = yes
-		localization_key = independent_duchy_low_frankish
 	}
 }
 AndalusianIndepDuchy = {

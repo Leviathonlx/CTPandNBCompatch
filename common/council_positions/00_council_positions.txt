@@ -239,7 +239,8 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:anglo_saxon
+											OR = { scope:councillor_liege.culture = culture:anglo_saxon
+											scope:councillor_liege.culture = culture:anglo_norse }
 										}
 										desc = barons_cc_male_cath_anglo_saxon
 									}
@@ -254,6 +255,7 @@ councillor_court_chaplain = {
 											OR = {
 												scope:councillor_liege.culture = culture:norse
 												scope:councillor_liege.culture = culture:norwegian
+												scope:councillor_liege.culture = culture:icelandic
 											}
 										}
 										desc = barons_cc_male_cath_norse_norwegian
@@ -263,19 +265,26 @@ councillor_court_chaplain = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
 												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:gutnish
+												scope:councillor_liege.culture = culture:crimean_gothic
+												scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = barons_cc_male_cath_swedish_danish
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:dutch
+											OR = { scope:councillor_liege.culture = culture:dutch
+											scope:councillor_liege.culture = culture:walloon
+											scope:councillor_liege.culture = culture:limburgisch
+											scope:councillor_liege.culture = culture:vlaemsch }
 										}
 										desc = barons_cc_male_cath_dutch
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:russian
+											OR = { scope:councillor_liege.culture = culture:russian
+											scope:councillor_liege.culture = culture:novgorod }
 										}
 										desc = barons_cc_male_cath_russian
 									}
@@ -287,7 +296,9 @@ councillor_court_chaplain = {
 											first_valid = {
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:french
+														OR = { scope:councillor_liege.culture = culture:french
+														scope:councillor_liege.culture = culture:bourguignon
+														scope:councillor_liege.culture = culture:picard }
 													}
 													desc = barons_cc_female_cath_french
 												}
@@ -299,7 +310,9 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:occitan
+														OR = { scope:councillor_liege.culture = culture:occitan
+														scope:councillor_liege.culture = culture:gascon
+														scope:councillor_liege.culture = culture:arpitan }
 													}
 													desc = barons_cc_female_cath_occitan
 												}
@@ -332,33 +345,9 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:bavarian
-															scope:councillor_liege.culture = culture:franconian
-															scope:councillor_liege.culture = culture:swabian
-															scope:councillor_liege.culture = culture:alemannic
-															scope:councillor_liege.culture = culture:ripuarisch
-															scope:councillor_liege.culture = culture:thuringian
-															scope:councillor_liege.culture = culture:silesian
-														}
+														scope:councillor_liege.culture_group = culture_group:central_germanic_group
 													}
 													desc = barons_cc_female_cath_mhg
-												}
-												triggered_desc = {
-													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:old_bavarian
-															scope:councillor_liege.culture = culture:high_frankish
-															scope:councillor_liege.culture = culture:old_alemannic
-														}
-													}
-													desc = barons_cc_female_cath_ohg
-												}
-												triggered_desc = {
-													trigger = {
-														scope:councillor_liege.culture = culture:low_frankish
-													}
-													desc = barons_cc_female_cath_low_frankish
 												}
 												triggered_desc = {
 													trigger = {
@@ -390,7 +379,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:french
+											OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 										}
 										desc = barons_cc_male_cath_french
 									}
@@ -402,7 +391,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:occitan
+											OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 										}
 										desc = barons_cc_male_cath_occitan
 									}
@@ -435,33 +424,9 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:bavarian
-												scope:councillor_liege.culture = culture:franconian
-												scope:councillor_liege.culture = culture:swabian
-												scope:councillor_liege.culture = culture:alemannic
-												scope:councillor_liege.culture = culture:ripuarisch
-												scope:councillor_liege.culture = culture:thuringian
-												scope:councillor_liege.culture = culture:silesian
-											}
+											scope:councillor_liege.culture_group = culture_group:central_germanic_group
 										}
 										desc = barons_cc_male_cath_mhg
-									}
-									triggered_desc = {
-										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:old_bavarian
-												scope:councillor_liege.culture = culture:high_frankish
-												scope:councillor_liege.culture = culture:old_alemannic
-											}
-										}
-										desc = barons_cc_male_cath_ohg
-									}
-									triggered_desc = {
-										trigger = {
-											scope:councillor_liege.culture = culture:low_frankish
-										}
-										desc = barons_cc_male_cath_low_frankish
 									}
 									triggered_desc = {
 										trigger = {
@@ -523,7 +488,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:anglo_saxon
+											OR = { scope:councillor_liege.culture = culture:anglo_saxon scope:councillor_liege.culture = culture:anglo_norse }
 										}
 										desc = baron_male_theo_cath_anglo_saxon
 									}
@@ -537,7 +502,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:norse
-												scope:councillor_liege.culture = culture:norwegian
+												scope:councillor_liege.culture = culture:norwegian scope:councillor_liege.culture = culture:icelandic
 											}
 										}
 										desc = baron_theo_cath_norse_norwegian
@@ -546,20 +511,20 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = baron_theo_cath_swedish_danish
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:dutch
+											OR = { scope:councillor_liege.culture = culture:dutch scope:councillor_liege.culture = culture:walloon scope:councillor_liege.culture = culture:limburgisch scope:councillor_liege.culture = culture:vlaemsch }
 										}
 										desc = baron_theo_cath_dutch
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:russian
+											OR = { scope:councillor_liege.culture = culture:russian scope:councillor_liege.culture = culture:novgorod }
 										}
 										desc = baron_male_theo_cath_russian
 									}
@@ -571,7 +536,7 @@ councillor_court_chaplain = {
 											first_valid = {
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:french
+														OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 													}
 													desc = baron_female_theo_cath_french
 												}
@@ -583,7 +548,7 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:occitan
+														OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 													}
 													desc = baron_female_theo_cath_occitan
 												}
@@ -616,33 +581,9 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:bavarian
-															scope:councillor_liege.culture = culture:franconian
-															scope:councillor_liege.culture = culture:swabian
-															scope:councillor_liege.culture = culture:alemannic
-															scope:councillor_liege.culture = culture:ripuarisch
-															scope:councillor_liege.culture = culture:thuringian
-															scope:councillor_liege.culture = culture:silesian
-														}
+														scope:councillor_liege.culture_group = culture_group:central_germanic_group
 													}
 													desc = baron_female_theo_cath_mhg
-												}
-												triggered_desc = {
-													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:old_bavarian
-															scope:councillor_liege.culture = culture:high_frankish
-															scope:councillor_liege.culture = culture:old_alemannic
-														}
-													}
-													desc = baron_female_theo_cath_ohg
-												}
-												triggered_desc = {
-													trigger = {
-														scope:councillor_liege.culture = culture:low_frankish
-													}
-													desc = baron_female_theo_cath_low_frankish
 												}
 												triggered_desc = {
 													trigger = {
@@ -680,7 +621,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:french
+											OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 										}
 										desc = baron_male_theo_cath_french
 									}
@@ -692,7 +633,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:occitan
+											OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 										}
 										desc = baron_male_theo_cath_occitan
 									}
@@ -725,33 +666,9 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:bavarian
-												scope:councillor_liege.culture = culture:franconian
-												scope:councillor_liege.culture = culture:swabian
-												scope:councillor_liege.culture = culture:alemannic
-												scope:councillor_liege.culture = culture:ripuarisch
-												scope:councillor_liege.culture = culture:thuringian
-												scope:councillor_liege.culture = culture:silesian
-											}
+											scope:councillor_liege.culture_group = culture_group:central_germanic_group
 										}
 										desc = baron_male_theo_cath_mhg
-									}
-									triggered_desc = {
-										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:old_bavarian
-												scope:councillor_liege.culture = culture:high_frankish
-												scope:councillor_liege.culture = culture:old_alemannic
-											}
-										}
-										desc = baron_male_theo_cath_ohg
-									}
-									triggered_desc = {
-										trigger = {
-											scope:councillor_liege.culture = culture:low_frankish
-										}
-										desc = baron_male_theo_cath_low_frankish
 									}
 									triggered_desc = {
 										trigger = {
@@ -819,7 +736,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:anglo_saxon
+											OR = { scope:councillor_liege.culture = culture:anglo_saxon scope:councillor_liege.culture = culture:anglo_norse }
 										}
 										desc = count_male_theo_cath_anglo_saxon
 									}
@@ -833,7 +750,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:norse
-												scope:councillor_liege.culture = culture:norwegian
+												scope:councillor_liege.culture = culture:norwegian scope:councillor_liege.culture = culture:icelandic
 											}
 										}
 										desc = count_theo_cath_norse_norwegian
@@ -842,20 +759,20 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = count_theo_cath_swedish_danish
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:dutch
+											OR = { scope:councillor_liege.culture = culture:dutch scope:councillor_liege.culture = culture:walloon scope:councillor_liege.culture = culture:limburgisch scope:councillor_liege.culture = culture:vlaemsch }
 										}
 										desc = count_default_cath_dutch
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:russian
+											OR = { scope:councillor_liege.culture = culture:russian scope:councillor_liege.culture = culture:novgorod }
 										}
 										desc = count_male_theo_cath_russian
 									}
@@ -901,7 +818,7 @@ councillor_court_chaplain = {
 												triggered_desc = {
 													trigger = {
 														OR = {
-															scope:councillor_liege.culture = culture:french
+															OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 															scope:councillor_liege.culture = culture:norman
 														}
 													}
@@ -909,7 +826,7 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:occitan
+														OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 													}
 													desc = count_default_female_cath_occitan
 												}
@@ -942,33 +859,9 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:bavarian
-															scope:councillor_liege.culture = culture:franconian
-															scope:councillor_liege.culture = culture:swabian
-															scope:councillor_liege.culture = culture:alemannic
-															scope:councillor_liege.culture = culture:ripuarisch
-															scope:councillor_liege.culture = culture:thuringian
-															scope:councillor_liege.culture = culture:silesian
-														}
+														scope:councillor_liege.culture_group = culture_group:central_germanic_group
 													}
 													desc = count_default_female_cath_mhg
-												}
-												triggered_desc = {
-													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:old_bavarian
-															scope:councillor_liege.culture = culture:high_frankish
-															scope:councillor_liege.culture = culture:old_alemannic
-														}
-													}
-													desc = count_default_female_cath_ohg
-												}
-												triggered_desc = {
-													trigger = {
-														scope:councillor_liege.culture = culture:low_frankish
-													}
-													desc = count_default_female_cath_low_frankish
 												}
 												triggered_desc = {
 													trigger = {
@@ -984,7 +877,8 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:greek
+														OR = { scope:councillor_liege.culture = culture:greek
+														scope:councillor_liege.culture = culture:arberian }
 													}
 													desc = count_female_theo_cath_greek
 												}
@@ -1055,7 +949,7 @@ councillor_court_chaplain = {
 									triggered_desc = {
 										trigger = {
 											OR = {
-												scope:councillor_liege.culture = culture:french
+												OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 												scope:councillor_liege.culture = culture:norman
 											}
 										}
@@ -1063,7 +957,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:occitan
+											OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 										}
 										desc = count_default_male_cath_occitan
 									}
@@ -1096,33 +990,9 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:bavarian
-												scope:councillor_liege.culture = culture:franconian
-												scope:councillor_liege.culture = culture:swabian
-												scope:councillor_liege.culture = culture:alemannic
-												scope:councillor_liege.culture = culture:ripuarisch
-												scope:councillor_liege.culture = culture:thuringian
-												scope:councillor_liege.culture = culture:silesian
-											}
+											scope:councillor_liege.culture_group = culture_group:central_germanic_group
 										}
 										desc = count_default_male_cath_mhg
-									}
-									triggered_desc = {
-										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:old_bavarian
-												scope:councillor_liege.culture = culture:high_frankish
-												scope:councillor_liege.culture = culture:old_alemannic
-											}
-										}
-										desc = count_default_male_cath_ohg
-									}
-									triggered_desc = {
-										trigger = {
-											scope:councillor_liege.culture = culture:low_frankish
-										}
-										desc = count_default_male_cath_low_frankish
 									}
 									triggered_desc = {
 										trigger = {
@@ -1138,7 +1008,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:greek
+											OR = { scope:councillor_liege.culture = culture:greek scope:councillor_liege.culture = culture:arberian }
 										}
 										desc = count_male_theo_cath_greek
 									}
@@ -1205,7 +1075,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:anglo_saxon
+											OR = { scope:councillor_liege.culture = culture:anglo_saxon scope:councillor_liege.culture = culture:anglo_norse }
 										}
 										desc = duke_male_theo_cath_anglo_saxon
 									}
@@ -1219,7 +1089,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:norse
-												scope:councillor_liege.culture = culture:norwegian
+												scope:councillor_liege.culture = culture:norwegian scope:councillor_liege.culture = culture:icelandic
 											}
 										}
 										desc = duke_theo_cath_norse_norwegian
@@ -1228,20 +1098,20 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = duke_theo_cath_swedish_danish
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:dutch
+											OR = { scope:councillor_liege.culture = culture:dutch scope:councillor_liege.culture = culture:walloon scope:councillor_liege.culture = culture:limburgisch scope:councillor_liege.culture = culture:vlaemsch }
 										}
 										desc = duke_default_male_cath_dutch
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:russian
+											OR = { scope:councillor_liege.culture = culture:russian scope:councillor_liege.culture = culture:novgorod }
 										}
 										desc = duke_male_theo_cath_russian
 									}
@@ -1259,7 +1129,7 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:french
+														OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 													}
 													desc = duke_default_female_cath_french
 												}
@@ -1271,7 +1141,7 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:occitan
+														OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 													}
 													desc = duke_default_female_cath_occitan
 												}
@@ -1304,33 +1174,9 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:bavarian
-															scope:councillor_liege.culture = culture:franconian
-															scope:councillor_liege.culture = culture:swabian
-															scope:councillor_liege.culture = culture:alemannic
-															scope:councillor_liege.culture = culture:ripuarisch
-															scope:councillor_liege.culture = culture:thuringian
-															scope:councillor_liege.culture = culture:silesian
-														}
+														scope:councillor_liege.culture_group = culture_group:central_germanic_group
 													}
 													desc = duke_default_female_cath_mhg
-												}
-												triggered_desc = {
-													trigger = {
-														OR = {
-															scope:councillor_liege.culture = culture:old_bavarian
-															scope:councillor_liege.culture = culture:high_frankish
-															scope:councillor_liege.culture = culture:old_alemannic
-														}
-													}
-													desc = duke_default_female_cath_ohg
-												}
-												triggered_desc = {
-													trigger = {
-														scope:councillor_liege.culture = culture:low_frankish
-													}
-													desc = duke_default_female_cath_low_frankish
 												}
 												triggered_desc = {
 													trigger = {
@@ -1346,7 +1192,7 @@ councillor_court_chaplain = {
 												}
 												triggered_desc = {
 													trigger = {
-														scope:councillor_liege.culture = culture:greek
+														OR = { scope:councillor_liege.culture = culture:greek scope:councillor_liege.culture = culture:arberian }
 													}
 													desc = duke_female_theo_cath_greek
 												}
@@ -1380,7 +1226,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:french
+											OR = { scope:councillor_liege.culture = culture:french scope:councillor_liege.culture = culture:bourguignon scope:councillor_liege.culture = culture:picard }
 										}
 										desc = duke_default_male_cath_french
 									}
@@ -1392,7 +1238,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:occitan
+											OR = { scope:councillor_liege.culture = culture:occitan scope:councillor_liege.culture = culture:gascon scope:councillor_liege.culture = culture:arpitan }
 										}
 										desc = duke_default_male_cath_occitan
 									}
@@ -1425,33 +1271,9 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:bavarian
-												scope:councillor_liege.culture = culture:franconian
-												scope:councillor_liege.culture = culture:swabian
-												scope:councillor_liege.culture = culture:alemannic
-												scope:councillor_liege.culture = culture:ripuarisch
-												scope:councillor_liege.culture = culture:thuringian
-												scope:councillor_liege.culture = culture:silesian
-											}
+											scope:councillor_liege.culture_group = culture_group:central_germanic_group
 										}
 										desc = duke_default_male_cath_mhg
-									}
-									triggered_desc = {
-										trigger = {
-											OR = {
-												scope:councillor_liege.culture = culture:old_bavarian
-												scope:councillor_liege.culture = culture:high_frankish
-												scope:councillor_liege.culture = culture:old_alemannic
-											}
-										}
-										desc = duke_default_male_cath_ohg
-									}
-									triggered_desc = {
-										trigger = {
-											scope:councillor_liege.culture = culture:low_frankish
-										}
-										desc = duke_default_male_cath_low_frankish
 									}
 									triggered_desc = {
 										trigger = {
@@ -1467,7 +1289,7 @@ councillor_court_chaplain = {
 									}
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:greek
+											OR = { scope:councillor_liege.culture = culture:greek scope:councillor_liege.culture = culture:arberian }
 										}
 										desc = duke_male_theo_cath_greek
 									}
@@ -1501,7 +1323,7 @@ councillor_court_chaplain = {
 								first_valid = {
 									triggered_desc = {
 										trigger = {
-											scope:councillor_liege.culture = culture:dutch
+											OR = { scope:councillor_liege.culture = culture:dutch scope:councillor_liege.culture = culture:walloon scope:councillor_liege.culture = culture:limburgisch scope:councillor_liege.culture = culture:vlaemsch }
 										}
 										desc = king_theo_cath_dutch
 									}
@@ -1574,7 +1396,7 @@ councillor_court_chaplain = {
 													trigger = {
 														OR = {
 															scope:councillor_liege.culture = culture:swedish
-															scope:councillor_liege.culture = culture:danish
+															scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 														}
 													}
 													desc = emperor_female_theo_germanic_swe_dan
@@ -1587,7 +1409,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = emperor_male_theo_germanic_swe_dan
@@ -1617,7 +1439,7 @@ councillor_court_chaplain = {
 													trigger = {
 														OR = {
 															scope:councillor_liege.culture = culture:swedish
-															scope:councillor_liege.culture = culture:danish
+															scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 														}
 													}
 													desc = king_female_theo_germanic_swe_dan
@@ -1630,7 +1452,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = king_male_theo_germanic_swe_dan
@@ -1655,7 +1477,7 @@ councillor_court_chaplain = {
 													trigger = {
 														OR = {
 															scope:councillor_liege.culture = culture:swedish
-															scope:councillor_liege.culture = culture:danish
+															scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 														}
 													}
 													desc = duke_female_theo_germanic_swe_dan
@@ -1668,7 +1490,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = duke_male_theo_germanic_swe_dan
@@ -1693,7 +1515,7 @@ councillor_court_chaplain = {
 													trigger = {
 														OR = {
 															scope:councillor_liege.culture = culture:swedish
-															scope:councillor_liege.culture = culture:danish
+															scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 														}
 													}
 													desc = count_female_theo_germanic_swe_dan
@@ -1706,7 +1528,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = count_male_theo_germanic_swe_dan
@@ -1731,7 +1553,7 @@ councillor_court_chaplain = {
 													trigger = {
 														OR = {
 															scope:councillor_liege.culture = culture:swedish
-															scope:councillor_liege.culture = culture:danish
+															scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 														}
 													}
 													desc = baron_female_theo_germanic_swe_dan
@@ -1744,7 +1566,7 @@ councillor_court_chaplain = {
 										trigger = {
 											OR = {
 												scope:councillor_liege.culture = culture:swedish
-												scope:councillor_liege.culture = culture:danish
+												scope:councillor_liege.culture = culture:danish scope:councillor_liege.culture = culture:gutnish scope:councillor_liege.culture = culture:crimean_gothic scope:councillor_liege.culture = culture:gothic
 											}
 										}
 										desc = baron_male_theo_germanic_swe_dan
