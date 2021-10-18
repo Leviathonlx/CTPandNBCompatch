@@ -783,6 +783,16 @@ emperor_male_turkish_group_one = {
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
+emperor_male_turkish_group_delhi = {
+	type = character
+	gender = male
+	special = holder
+	priority = 201
+	tier = empire
+	titles = { e_rajastan }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
 emperor_male_turkish_group_two = {
 	type = character
 	gender = male
@@ -898,6 +908,14 @@ empire_turkish_group_one = {
 	priority = 153
 	tier = empire
 	cultures = { turkish pecheneg tatars turkmeni }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	top_liege = no
+}
+empire_turkish_group_delhi = {
+	type = title
+	priority = 210
+	tier = empire
+	titles = { e_rajastan }
 	governments = { feudal_government clan_government tribal_government republic_government }
 	top_liege = no
 }
